@@ -1,0 +1,6 @@
+
+class tlb {
+	public:
+		tlb();
+
+};

@@ -1,3 +1,8 @@
+#include <iostream>
+#include "env.h"
+
+using namespace std;
+
 bool
 get_bool_env(const char* var_name, bool def_val)
 {
@@ -9,4 +14,16 @@ get_bool_env(const char* var_name, bool def_val)
 	return true;
     }
     return def_val;
+}
+
+
+int
+get_int_env(const char* var_name, int def_val)
+{
+    const char* var_val = getenv(var_name);
+    if (!var_val) {
+        return def_val;
+    }
+    int val = atoi(var_val);
+    return val;
 }

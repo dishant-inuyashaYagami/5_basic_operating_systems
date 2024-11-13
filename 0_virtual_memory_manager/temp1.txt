@@ -1,0 +1,2809 @@
+g++ -c -std=c++11 pageTable.cpp
+g++ -std=c++11 main.cpp tlb.o pageTable.o env.o
+#./a.out 65536 0
+#./a.out 65536 1
+#./a.out 65536 2
+#./a.out 65536 3
+./a.out 32768 0
+
+Specified Arguments: 32768 0 
+Virtual Memory Manager Started!
+RAM size: 32768
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: FIFO ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        128
+pageTable constructor completed execution!
+address: 0100001000010100, index: 0000000001000010, offset: 0000000000010100
+frame_index: 0, frame_base_location: 0
+content at logical address 16916 is: 0
+address: 1111010000011101, index: 0000000011110100, offset: 0000000000011101
+frame_index: 1, frame_base_location: 256
+content at logical address 62493 is: 0
+address: 0111010111110110, index: 0000000001110101, offset: 0000000011110110
+frame_index: 2, frame_base_location: 512
+content at logical address 30198 is: 29
+address: 1101000110110011, index: 0000000011010001, offset: 0000000010110011
+frame_index: 3, frame_base_location: 768
+content at logical address 53683 is: 108
+address: 1001110011111001, index: 0000000010011100, offset: 0000000011111001
+frame_index: 4, frame_base_location: 1024
+content at logical address 40185 is: 0
+address: 0111000001101101, index: 0000000001110000, offset: 0000000001101101
+frame_index: 5, frame_base_location: 1280
+content at logical address 28781 is: 0
+address: 0101111110001110, index: 0000000001011111, offset: 0000000010001110
+frame_index: 6, frame_base_location: 1536
+content at logical address 24462 is: 23
+address: 1011110100001111, index: 0000000010111101, offset: 0000000000001111
+frame_index: 7, frame_base_location: 1792
+content at logical address 48399 is: 67
+address: 1111110100101111, index: 0000000011111101, offset: 0000000000101111
+frame_index: 8, frame_base_location: 2048
+content at logical address 64815 is: 75
+address: 0100011101110111, index: 0000000001000111, offset: 0000000001110111
+frame_index: 9, frame_base_location: 2304
+content at logical address 18295 is: -35
+address: 0010111110111010, index: 0000000000101111, offset: 0000000010111010
+frame_index: 10, frame_base_location: 2560
+content at logical address 12218 is: 11
+address: 0101100011101000, index: 0000000001011000, offset: 0000000011101000
+frame_index: 11, frame_base_location: 2816
+content at logical address 22760 is: 0
+address: 1110001001111110, index: 0000000011100010, offset: 0000000001111110
+frame_index: 12, frame_base_location: 3072
+content at logical address 57982 is: 56
+address: 0110110100111110, index: 0000000001101101, offset: 0000000000111110
+frame_index: 13, frame_base_location: 3328
+content at logical address 27966 is: 27
+address: 1101011001101110, index: 0000000011010110, offset: 0000000001101110
+frame_index: 14, frame_base_location: 3584
+content at logical address 54894 is: 53
+address: 1001100000010001, index: 0000000010011000, offset: 0000000000010001
+frame_index: 15, frame_base_location: 3840
+content at logical address 38929 is: 0
+address: 1000000001100001, index: 0000000010000000, offset: 0000000001100001
+frame_index: 16, frame_base_location: 4096
+content at logical address 32865 is: 0
+address: 1111101011110011, index: 0000000011111010, offset: 0000000011110011
+frame_index: 17, frame_base_location: 4352
+content at logical address 64243 is: -68
+address: 0000100100001011, index: 0000000000001001, offset: 0000000000001011
+frame_index: 18, frame_base_location: 4608
+content at logical address 2315 is: 66
+address: 1111101111000110, index: 0000000011111011, offset: 0000000011000110
+frame_index: 19, frame_base_location: 4864
+content at logical address 64454 is: 62
+address: 1101011100000001, index: 0000000011010111, offset: 0000000000000001
+frame_index: 20, frame_base_location: 5120
+content at logical address 55041 is: 0
+address: 0100100011001001, index: 0000000001001000, offset: 0000000011001001
+frame_index: 21, frame_base_location: 5376
+content at logical address 18633 is: 0
+address: 0011100011011101, index: 0000000000111000, offset: 0000000011011101
+frame_index: 22, frame_base_location: 5632
+content at logical address 14557 is: 0
+address: 1110111001001110, index: 0000000011101110, offset: 0000000001001110
+frame_index: 23, frame_base_location: 5888
+content at logical address 61006 is: 59
+address: 1111010010010111, index: 0000000011110100, offset: 0000000010010111
+TLB HIT
+frame_index: 1, frame_base_location: 256
+content at logical address 62615 is: 37
+address: 0001110110100111, index: 0000000000011101, offset: 0000000010100111
+frame_index: 24, frame_base_location: 6144
+content at logical address 7591 is: 105
+address: 1111110011101011, index: 0000000011111100, offset: 0000000011101011
+frame_index: 25, frame_base_location: 6400
+content at logical address 64747 is: 58
+address: 0001101001000111, index: 0000000000011010, offset: 0000000001000111
+frame_index: 26, frame_base_location: 6656
+content at logical address 6727 is: -111
+address: 0111111000111011, index: 0000000001111110, offset: 0000000000111011
+frame_index: 27, frame_base_location: 6912
+content at logical address 32315 is: -114
+address: 1110110011100101, index: 0000000011101100, offset: 0000000011100101
+frame_index: 28, frame_base_location: 7168
+content at logical address 60645 is: 0
+address: 0001100010100100, index: 0000000000011000, offset: 0000000010100100
+frame_index: 29, frame_base_location: 7424
+content at logical address 6308 is: 0
+address: 1011001001111000, index: 0000000010110010, offset: 0000000001111000
+frame_index: 30, frame_base_location: 7680
+content at logical address 45688 is: 0
+address: 0000001111001001, index: 0000000000000011, offset: 0000000011001001
+frame_index: 31, frame_base_location: 7936
+content at logical address 969 is: 0
+address: 1001111110111011, index: 0000000010011111, offset: 0000000010111011
+frame_index: 32, frame_base_location: 8192
+content at logical address 40891 is: -18
+address: 1100000010001110, index: 0000000011000000, offset: 0000000010001110
+frame_index: 33, frame_base_location: 8448
+content at logical address 49294 is: 48
+address: 1010000010011110, index: 0000000010100000, offset: 0000000010011110
+frame_index: 34, frame_base_location: 8704
+content at logical address 41118 is: 40
+address: 0101001110010011, index: 0000000001010011, offset: 0000000010010011
+frame_index: 35, frame_base_location: 8960
+content at logical address 21395 is: -28
+address: 0001011111001011, index: 0000000000010111, offset: 0000000011001011
+frame_index: 36, frame_base_location: 9216
+content at logical address 6091 is: -14
+address: 0111111100011101, index: 0000000001111111, offset: 0000000000011101
+frame_index: 37, frame_base_location: 9472
+content at logical address 32541 is: 0
+address: 0100010100000001, index: 0000000001000101, offset: 0000000000000001
+frame_index: 38, frame_base_location: 9728
+content at logical address 17665 is: 0
+address: 0000111011001000, index: 0000000000001110, offset: 0000000011001000
+frame_index: 39, frame_base_location: 9984
+content at logical address 3784 is: 0
+address: 0111000000101110, index: 0000000001110000, offset: 0000000000101110
+content at logical address 28718 is: 28
+address: 1110011101101000, index: 0000000011100111, offset: 0000000001101000
+frame_index: 40, frame_base_location: 10240
+content at logical address 59240 is: 0
+address: 1001110011110010, index: 0000000010011100, offset: 0000000011110010
+content at logical address 40178 is: 39
+address: 1110101010110110, index: 0000000011101010, offset: 0000000010110110
+frame_index: 41, frame_base_location: 10496
+content at logical address 60086 is: 58
+address: 1010010100001100, index: 0000000010100101, offset: 0000000000001100
+frame_index: 42, frame_base_location: 10752
+content at logical address 42252 is: 0
+address: 1010111011100010, index: 0000000010101110, offset: 0000000011100010
+frame_index: 43, frame_base_location: 11008
+content at logical address 44770 is: 43
+address: 0101011111110010, index: 0000000001010111, offset: 0000000011110010
+frame_index: 44, frame_base_location: 11264
+content at logical address 22514 is: 21
+address: 0000101111111011, index: 0000000000001011, offset: 0000000011111011
+frame_index: 45, frame_base_location: 11520
+content at logical address 3067 is: -2
+address: 0011110110001101, index: 0000000000111101, offset: 0000000010001101
+frame_index: 46, frame_base_location: 11776
+content at logical address 15757 is: 0
+address: 0111101110100001, index: 0000000001111011, offset: 0000000010100001
+frame_index: 47, frame_base_location: 12032
+content at logical address 31649 is: 0
+address: 0010101001011010, index: 0000000000101010, offset: 0000000001011010
+frame_index: 48, frame_base_location: 12288
+content at logical address 10842 is: 10
+address: 1010101011110101, index: 0000000010101010, offset: 0000000011110101
+frame_index: 49, frame_base_location: 12544
+content at logical address 43765 is: 0
+address: 1000001001111101, index: 0000000010000010, offset: 0000000001111101
+frame_index: 50, frame_base_location: 12800
+content at logical address 33405 is: 0
+address: 1010111110011010, index: 0000000010101111, offset: 0000000010011010
+frame_index: 51, frame_base_location: 13056
+content at logical address 44954 is: 43
+address: 1101110101010001, index: 0000000011011101, offset: 0000000001010001
+frame_index: 52, frame_base_location: 13312
+content at logical address 56657 is: 0
+address: 0001001110001011, index: 0000000000010011, offset: 0000000010001011
+frame_index: 53, frame_base_location: 13568
+content at logical address 5003 is: -30
+address: 1100010000110011, index: 0000000011000100, offset: 0000000000110011
+frame_index: 54, frame_base_location: 13824
+content at logical address 50227 is: 12
+address: 0100101110011110, index: 0000000001001011, offset: 0000000010011110
+frame_index: 55, frame_base_location: 14080
+content at logical address 19358 is: 18
+address: 1000111010110001, index: 0000000010001110, offset: 0000000010110001
+frame_index: 56, frame_base_location: 14336
+content at logical address 36529 is: 0
+address: 0010100010011000, index: 0000000000101000, offset: 0000000010011000
+frame_index: 57, frame_base_location: 14592
+content at logical address 10392 is: 0
+address: 1110011000000010, index: 0000000011100110, offset: 0000000000000010
+frame_index: 58, frame_base_location: 14848
+content at logical address 58882 is: 57
+address: 0001010000001001, index: 0000000000010100, offset: 0000000000001001
+frame_index: 59, frame_base_location: 15104
+content at logical address 5129 is: 0
+address: 1110010010111010, index: 0000000011100100, offset: 0000000010111010
+frame_index: 60, frame_base_location: 15360
+content at logical address 58554 is: 57
+address: 1110010011011000, index: 0000000011100100, offset: 0000000011011000
+TLB HIT
+frame_index: 60, frame_base_location: 15360
+content at logical address 58584 is: 0
+address: 0110101100110100, index: 0000000001101011, offset: 0000000000110100
+frame_index: 61, frame_base_location: 15616
+content at logical address 27444 is: 0
+address: 1110011001100110, index: 0000000011100110, offset: 0000000001100110
+TLB HIT
+frame_index: 58, frame_base_location: 14848
+content at logical address 58982 is: 57
+address: 1100100100010100, index: 0000000011001001, offset: 0000000000010100
+frame_index: 62, frame_base_location: 15872
+content at logical address 51476 is: 0
+address: 0001101010001100, index: 0000000000011010, offset: 0000000010001100
+content at logical address 6796 is: 0
+address: 0101001100111111, index: 0000000001010011, offset: 0000000000111111
+TLB HIT
+frame_index: 35, frame_base_location: 8960
+content at logical address 21311 is: -49
+address: 0111011111110001, index: 0000000001110111, offset: 0000000011110001
+frame_index: 63, frame_base_location: 16128
+content at logical address 30705 is: 0
+address: 0111000100100100, index: 0000000001110001, offset: 0000000000100100
+frame_index: 64, frame_base_location: 16384
+content at logical address 28964 is: 0
+address: 1010000000101011, index: 0000000010100000, offset: 0000000000101011
+content at logical address 41003 is: 10
+address: 0100111100100011, index: 0000000001001111, offset: 0000000000100011
+frame_index: 65, frame_base_location: 16640
+content at logical address 20259 is: -56
+address: 1110001000000001, index: 0000000011100010, offset: 0000000000000001
+content at logical address 57857 is: 0
+address: 1111011100011010, index: 0000000011110111, offset: 0000000000011010
+frame_index: 66, frame_base_location: 16896
+content at logical address 63258 is: 61
+address: 1000111000010110, index: 0000000010001110, offset: 0000000000010110
+TLB HIT
+frame_index: 56, frame_base_location: 14336
+content at logical address 36374 is: 35
+address: 0000001010110100, index: 0000000000000010, offset: 0000000010110100
+frame_index: 67, frame_base_location: 17152
+content at logical address 692 is: 0
+address: 1010100001110001, index: 0000000010101000, offset: 0000000001110001
+frame_index: 68, frame_base_location: 17408
+content at logical address 43121 is: 0
+address: 1011110000000000, index: 0000000010111100, offset: 0000000000000000
+frame_index: 69, frame_base_location: 17664
+content at logical address 48128 is: 0
+address: 1000011100000001, index: 0000000010000111, offset: 0000000000000001
+frame_index: 70, frame_base_location: 17920
+content at logical address 34561 is: 0
+address: 1100000000111101, index: 0000000011000000, offset: 0000000000111101
+content at logical address 49213 is: 0
+address: 1001000000111010, index: 0000000010010000, offset: 0000000000111010
+frame_index: 71, frame_base_location: 18176
+content at logical address 36922 is: 36
+address: 1110011100011010, index: 0000000011100111, offset: 0000000000011010
+content at logical address 59162 is: 57
+address: 1100010101111000, index: 0000000011000101, offset: 0000000001111000
+frame_index: 72, frame_base_location: 18432
+content at logical address 50552 is: 0
+address: 0100010111001010, index: 0000000001000101, offset: 0000000011001010
+content at logical address 17866 is: 17
+address: 0100011011100001, index: 0000000001000110, offset: 0000000011100001
+frame_index: 73, frame_base_location: 18688
+content at logical address 18145 is: 0
+address: 0000111100101100, index: 0000000000001111, offset: 0000000000101100
+frame_index: 74, frame_base_location: 18944
+content at logical address 3884 is: 0
+address: 1101010001110100, index: 0000000011010100, offset: 0000000001110100
+frame_index: 75, frame_base_location: 19200
+content at logical address 54388 is: 0
+address: 1010011110110100, index: 0000000010100111, offset: 0000000010110100
+frame_index: 76, frame_base_location: 19456
+content at logical address 42932 is: 0
+address: 1011011101000111, index: 0000000010110111, offset: 0000000001000111
+frame_index: 77, frame_base_location: 19712
+content at logical address 46919 is: -47
+address: 1110011000001100, index: 0000000011100110, offset: 0000000000001100
+TLB HIT
+frame_index: 58, frame_base_location: 14848
+content at logical address 58892 is: 0
+address: 0010000110101100, index: 0000000000100001, offset: 0000000010101100
+frame_index: 78, frame_base_location: 19968
+content at logical address 8620 is: 0
+address: 1001010111000000, index: 0000000010010101, offset: 0000000011000000
+frame_index: 79, frame_base_location: 20224
+content at logical address 38336 is: 0
+address: 1111101101100101, index: 0000000011111011, offset: 0000000001100101
+content at logical address 64357 is: 0
+address: 0101101101011011, index: 0000000001011011, offset: 0000000001011011
+frame_index: 80, frame_base_location: 20480
+content at logical address 23387 is: -42
+address: 1010011010001000, index: 0000000010100110, offset: 0000000010001000
+frame_index: 81, frame_base_location: 20736
+content at logical address 42632 is: 0
+address: 0011111000101001, index: 0000000000111110, offset: 0000000000101001
+frame_index: 82, frame_base_location: 20992
+content at logical address 15913 is: 0
+address: 0011110100111111, index: 0000000000111101, offset: 0000000000111111
+content at logical address 15679 is: 79
+address: 0101011111100101, index: 0000000001010111, offset: 0000000011100101
+content at logical address 22501 is: 0
+address: 1001001010100100, index: 0000000010010010, offset: 0000000010100100
+frame_index: 83, frame_base_location: 21248
+content at logical address 37540 is: 0
+address: 0001010110010111, index: 0000000000010101, offset: 0000000010010111
+frame_index: 84, frame_base_location: 21504
+content at logical address 5527 is: 101
+address: 1111100110110001, index: 0000000011111001, offset: 0000000010110001
+frame_index: 85, frame_base_location: 21760
+content at logical address 63921 is: 0
+address: 1111010011111100, index: 0000000011110100, offset: 0000000011111100
+content at logical address 62716 is: 0
+address: 1000000001101010, index: 0000000010000000, offset: 0000000001101010
+content at logical address 32874 is: 32
+address: 1111101110000110, index: 0000000011111011, offset: 0000000010000110
+TLB HIT
+frame_index: 19, frame_base_location: 4864
+content at logical address 64390 is: 62
+address: 1111011001111101, index: 0000000011110110, offset: 0000000001111101
+frame_index: 86, frame_base_location: 22016
+content at logical address 63101 is: 0
+address: 1111000101101010, index: 0000000011110001, offset: 0000000001101010
+frame_index: 87, frame_base_location: 22272
+content at logical address 61802 is: 60
+address: 0100110011000000, index: 0000000001001100, offset: 0000000011000000
+frame_index: 88, frame_base_location: 22528
+content at logical address 19648 is: 0
+address: 0111000101100111, index: 0000000001110001, offset: 0000000001100111
+content at logical address 29031 is: 89
+address: 1010111110110101, index: 0000000010101111, offset: 0000000010110101
+content at logical address 44981 is: 0
+address: 0110110110111100, index: 0000000001101101, offset: 0000000010111100
+content at logical address 28092 is: 0
+address: 0010010011101000, index: 0000000000100100, offset: 0000000011101000
+frame_index: 89, frame_base_location: 22784
+content at logical address 9448 is: 0
+address: 1010111011001000, index: 0000000010101110, offset: 0000000011001000
+content at logical address 44744 is: 0
+address: 1111000000111000, index: 0000000011110000, offset: 0000000000111000
+frame_index: 90, frame_base_location: 23040
+content at logical address 61496 is: 0
+address: 0111101011011101, index: 0000000001111010, offset: 0000000011011101
+frame_index: 91, frame_base_location: 23296
+content at logical address 31453 is: 0
+address: 1110110101001010, index: 0000000011101101, offset: 0000000001001010
+frame_index: 92, frame_base_location: 23552
+content at logical address 60746 is: 59
+address: 0010111110100111, index: 0000000000101111, offset: 0000000010100111
+content at logical address 12199 is: -23
+address: 1111001100101111, index: 0000000011110011, offset: 0000000000101111
+frame_index: 93, frame_base_location: 23808
+content at logical address 62255 is: -53
+address: 0101010100100001, index: 0000000001010101, offset: 0000000000100001
+frame_index: 94, frame_base_location: 24064
+content at logical address 21793 is: 0
+address: 0110011110110000, index: 0000000001100111, offset: 0000000010110000
+frame_index: 95, frame_base_location: 24320
+content at logical address 26544 is: 0
+address: 0011101001110100, index: 0000000000111010, offset: 0000000001110100
+frame_index: 96, frame_base_location: 24576
+content at logical address 14964 is: 0
+address: 1010000111110110, index: 0000000010100001, offset: 0000000011110110
+frame_index: 97, frame_base_location: 24832
+content at logical address 41462 is: 40
+address: 1101101100011001, index: 0000000011011011, offset: 0000000000011001
+frame_index: 98, frame_base_location: 25088
+content at logical address 56089 is: 0
+address: 1100101101000110, index: 0000000011001011, offset: 0000000001000110
+frame_index: 99, frame_base_location: 25344
+content at logical address 52038 is: 50
+address: 1011101101101110, index: 0000000010111011, offset: 0000000001101110
+frame_index: 100, frame_base_location: 25600
+content at logical address 47982 is: 46
+address: 1110100001011100, index: 0000000011101000, offset: 0000000001011100
+frame_index: 101, frame_base_location: 25856
+content at logical address 59484 is: 0
+address: 1100011011101100, index: 0000000011000110, offset: 0000000011101100
+frame_index: 102, frame_base_location: 26112
+content at logical address 50924 is: 0
+address: 0001101100011110, index: 0000000000011011, offset: 0000000000011110
+frame_index: 103, frame_base_location: 26368
+content at logical address 6942 is: 6
+address: 1000100010110110, index: 0000000010001000, offset: 0000000010110110
+frame_index: 104, frame_base_location: 26624
+content at logical address 34998 is: 34
+address: 0110100110111101, index: 0000000001101001, offset: 0000000010111101
+frame_index: 105, frame_base_location: 26880
+content at logical address 27069 is: 0
+address: 1100101011010110, index: 0000000011001010, offset: 0000000011010110
+frame_index: 106, frame_base_location: 27136
+content at logical address 51926 is: 50
+address: 1110110011100101, index: 0000000011101100, offset: 0000000011100101
+content at logical address 60645 is: 0
+address: 1010100010101101, index: 0000000010101000, offset: 0000000010101101
+content at logical address 43181 is: 0
+address: 0010100100111111, index: 0000000000101001, offset: 0000000000111111
+frame_index: 107, frame_base_location: 27392
+content at logical address 10559 is: 79
+address: 0001001000111000, index: 0000000000010010, offset: 0000000000111000
+frame_index: 108, frame_base_location: 27648
+content at logical address 4664 is: 0
+address: 0110111110100010, index: 0000000001101111, offset: 0000000010100010
+frame_index: 109, frame_base_location: 27904
+content at logical address 28578 is: 27
+address: 1110100001111100, index: 0000000011101000, offset: 0000000001111100
+TLB HIT
+frame_index: 101, frame_base_location: 25856
+content at logical address 59516 is: 0
+address: 1001100000000000, index: 0000000010011000, offset: 0000000000000000
+content at logical address 38912 is: 0
+address: 1111100001001010, index: 0000000011111000, offset: 0000000001001010
+frame_index: 110, frame_base_location: 28160
+content at logical address 63562 is: 62
+address: 1111110101001110, index: 0000000011111101, offset: 0000000001001110
+content at logical address 64846 is: 63
+address: 1111010111011010, index: 0000000011110101, offset: 0000000011011010
+frame_index: 111, frame_base_location: 28416
+content at logical address 62938 is: 61
+address: 0110101000111010, index: 0000000001101010, offset: 0000000000111010
+frame_index: 112, frame_base_location: 28672
+content at logical address 27194 is: 26
+address: 0111000010000100, index: 0000000001110000, offset: 0000000010000100
+content at logical address 28804 is: 0
+address: 1111000100000111, index: 0000000011110001, offset: 0000000000000111
+content at logical address 61703 is: 65
+address: 0010101011110110, index: 0000000000101010, offset: 0000000011110110
+content at logical address 10998 is: 10
+address: 0001100111000100, index: 0000000000011001, offset: 0000000011000100
+frame_index: 113, frame_base_location: 28928
+content at logical address 6596 is: 0
+address: 1001001101011001, index: 0000000010010011, offset: 0000000001011001
+frame_index: 114, frame_base_location: 29184
+content at logical address 37721 is: 0
+address: 1010100110100110, index: 0000000010101001, offset: 0000000010100110
+frame_index: 115, frame_base_location: 29440
+content at logical address 43430 is: 42
+address: 0101100010100100, index: 0000000001011000, offset: 0000000010100100
+content at logical address 22692 is: 0
+address: 1111010111111011, index: 0000000011110101, offset: 0000000011111011
+TLB HIT
+frame_index: 111, frame_base_location: 28416
+content at logical address 62971 is: 126
+address: 1011100000010101, index: 0000000010111000, offset: 0000000000010101
+frame_index: 116, frame_base_location: 29696
+content at logical address 47125 is: 0
+address: 1100110100101001, index: 0000000011001101, offset: 0000000000101001
+frame_index: 117, frame_base_location: 29952
+content at logical address 52521 is: 0
+address: 1000011101010110, index: 0000000010000111, offset: 0000000001010110
+content at logical address 34646 is: 33
+address: 1000000001111001, index: 0000000010000000, offset: 0000000001111001
+content at logical address 32889 is: 0
+address: 0011001011111111, index: 0000000000110010, offset: 0000000011111111
+frame_index: 118, frame_base_location: 30208
+content at logical address 13055 is: -65
+address: 1111111110001000, index: 0000000011111111, offset: 0000000010001000
+frame_index: 119, frame_base_location: 30464
+content at logical address 65416 is: 0
+address: 1111010110010101, index: 0000000011110101, offset: 0000000010010101
+TLB HIT
+frame_index: 111, frame_base_location: 28416
+content at logical address 62869 is: 0
+address: 1101111111100010, index: 0000000011011111, offset: 0000000011100010
+frame_index: 120, frame_base_location: 30720
+content at logical address 57314 is: 55
+address: 0011000101110011, index: 0000000000110001, offset: 0000000001110011
+frame_index: 121, frame_base_location: 30976
+content at logical address 12659 is: 92
+address: 0011011011100100, index: 0000000000110110, offset: 0000000011100100
+frame_index: 122, frame_base_location: 31232
+content at logical address 14052 is: 0
+address: 1000000010111100, index: 0000000010000000, offset: 0000000010111100
+TLB HIT
+frame_index: 16, frame_base_location: 4096
+content at logical address 32956 is: 0
+address: 1100000001111001, index: 0000000011000000, offset: 0000000001111001
+content at logical address 49273 is: 0
+address: 1100010010110000, index: 0000000011000100, offset: 0000000010110000
+content at logical address 50352 is: 0
+address: 1100001001001001, index: 0000000011000010, offset: 0000000001001001
+frame_index: 123, frame_base_location: 31488
+content at logical address 49737 is: 0
+address: 0011110011000011, index: 0000000000111100, offset: 0000000011000011
+frame_index: 124, frame_base_location: 31744
+content at logical address 15555 is: 48
+address: 1011100101110011, index: 0000000010111001, offset: 0000000001110011
+frame_index: 125, frame_base_location: 32000
+content at logical address 47475 is: 92
+address: 0011101111100000, index: 0000000000111011, offset: 0000000011100000
+frame_index: 126, frame_base_location: 32256
+content at logical address 15328 is: 0
+address: 1000011100111101, index: 0000000010000111, offset: 0000000000111101
+TLB HIT
+frame_index: 70, frame_base_location: 17920
+content at logical address 34621 is: 0
+address: 1100100010100101, index: 0000000011001000, offset: 0000000010100101
+frame_index: 127, frame_base_location: 32512
+content at logical address 51365 is: 0
+address: 1000000000110100, index: 0000000010000000, offset: 0000000000110100
+TLB HIT
+frame_index: 16, frame_base_location: 4096
+content at logical address 32820 is: 0
+address: 1011111011010111, index: 0000000010111110, offset: 0000000011010111
+frame_index: 0, frame_base_location: 0
+content at logical address 48855 is: -75
+address: 0010111111000000, index: 0000000000101111, offset: 0000000011000000
+content at logical address 12224 is: 0
+address: 0000011111110011, index: 0000000000000111, offset: 0000000011110011
+frame_index: 1, frame_base_location: 256
+content at logical address 2035 is: -4
+address: 1110110001111011, index: 0000000011101100, offset: 0000000001111011
+content at logical address 60539 is: 30
+address: 0011100100000011, index: 0000000000111001, offset: 0000000000000011
+frame_index: 2, frame_base_location: 512
+content at logical address 14595 is: 64
+address: 0011011000011101, index: 0000000000110110, offset: 0000000000011101
+TLB HIT
+frame_index: 122, frame_base_location: 31232
+content at logical address 13853 is: 0
+address: 0101111001001111, index: 0000000001011110, offset: 0000000001001111
+frame_index: 3, frame_base_location: 768
+content at logical address 24143 is: -109
+address: 0011101101110000, index: 0000000000111011, offset: 0000000001110000
+TLB HIT
+frame_index: 126, frame_base_location: 32256
+content at logical address 15216 is: 0
+address: 0001111110110001, index: 0000000000011111, offset: 0000000010110001
+frame_index: 4, frame_base_location: 1024
+content at logical address 8113 is: 0
+address: 0101100001110000, index: 0000000001011000, offset: 0000000001110000
+TLB HIT
+frame_index: 11, frame_base_location: 2816
+content at logical address 22640 is: 0
+address: 1000000011010010, index: 0000000010000000, offset: 0000000011010010
+TLB HIT
+frame_index: 16, frame_base_location: 4096
+content at logical address 32978 is: 32
+address: 1001100011101111, index: 0000000010011000, offset: 0000000011101111
+content at logical address 39151 is: 59
+address: 0100110001000000, index: 0000000001001100, offset: 0000000001000000
+content at logical address 19520 is: 0
+address: 1110001100011101, index: 0000000011100011, offset: 0000000000011101
+frame_index: 5, frame_base_location: 1280
+content at logical address 58141 is: 0
+address: 1111100111010111, index: 0000000011111001, offset: 0000000011010111
+content at logical address 63959 is: 117
+address: 1100111100110000, index: 0000000011001111, offset: 0000000000110000
+frame_index: 6, frame_base_location: 1536
+content at logical address 53040 is: 0
+address: 1101101000100010, index: 0000000011011010, offset: 0000000000100010
+frame_index: 7, frame_base_location: 1792
+content at logical address 55842 is: 54
+address: 0000001001001001, index: 0000000000000010, offset: 0000000001001001
+content at logical address 585 is: 0
+address: 1100100000011101, index: 0000000011001000, offset: 0000000000011101
+TLB HIT
+frame_index: 127, frame_base_location: 32512
+content at logical address 51229 is: 0
+address: 1111101010110101, index: 0000000011111010, offset: 0000000010110101
+content at logical address 64181 is: 0
+address: 1101011001011111, index: 0000000011010110, offset: 0000000001011111
+content at logical address 54879 is: -105
+address: 0110111000110010, index: 0000000001101110, offset: 0000000000110010
+frame_index: 8, frame_base_location: 2048
+content at logical address 28210 is: 27
+address: 0010100000011100, index: 0000000000101000, offset: 0000000000011100
+content at logical address 10268 is: 0
+address: 0011110000100011, index: 0000000000111100, offset: 0000000000100011
+TLB HIT
+frame_index: 124, frame_base_location: 31744
+content at logical address 15395 is: 8
+address: 0011001001010100, index: 0000000000110010, offset: 0000000001010100
+TLB HIT
+frame_index: 118, frame_base_location: 30208
+content at logical address 12884 is: 0
+address: 0000100001100101, index: 0000000000001000, offset: 0000000001100101
+frame_index: 9, frame_base_location: 2304
+content at logical address 2149 is: 0
+address: 1101000011101011, index: 0000000011010000, offset: 0000000011101011
+frame_index: 10, frame_base_location: 2560
+content at logical address 53483 is: 58
+address: 1110100011010110, index: 0000000011101000, offset: 0000000011010110
+content at logical address 59606 is: 58
+address: 0011101010000101, index: 0000000000111010, offset: 0000000010000101
+content at logical address 14981 is: 0
+address: 1000111101000000, index: 0000000010001111, offset: 0000000001000000
+frame_index: 11, frame_base_location: 2816
+content at logical address 36672 is: 0
+address: 0101101010011101, index: 0000000001011010, offset: 0000000010011101
+frame_index: 12, frame_base_location: 3072
+content at logical address 23197 is: 0
+address: 1000111010100110, index: 0000000010001110, offset: 0000000010100110
+content at logical address 36518 is: 35
+address: 0011010000110001, index: 0000000000110100, offset: 0000000000110001
+frame_index: 13, frame_base_location: 3328
+content at logical address 13361 is: 0
+address: 0100110101100010, index: 0000000001001101, offset: 0000000001100010
+frame_index: 14, frame_base_location: 3584
+content at logical address 19810 is: 19
+address: 0110010101100011, index: 0000000001100101, offset: 0000000001100011
+frame_index: 15, frame_base_location: 3840
+content at logical address 25955 is: 88
+address: 1111010011010110, index: 0000000011110100, offset: 0000000011010110
+frame_index: 16, frame_base_location: 4096
+content at logical address 62678 is: 61
+address: 0110010110100101, index: 0000000001100101, offset: 0000000010100101
+TLB HIT
+frame_index: 15, frame_base_location: 3840
+content at logical address 26021 is: 0
+address: 0111001011100001, index: 0000000001110010, offset: 0000000011100001
+frame_index: 17, frame_base_location: 4352
+content at logical address 29409 is: 0
+address: 1001010011011111, index: 0000000010010100, offset: 0000000011011111
+frame_index: 18, frame_base_location: 4608
+content at logical address 38111 is: 55
+address: 1110010011001101, index: 0000000011100100, offset: 0000000011001101
+content at logical address 58573 is: 0
+address: 1101111000001000, index: 0000000011011110, offset: 0000000000001000
+frame_index: 19, frame_base_location: 4864
+content at logical address 56840 is: 0
+address: 1010000101011010, index: 0000000010100001, offset: 0000000001011010
+content at logical address 41306 is: 40
+address: 1101010010011010, index: 0000000011010100, offset: 0000000010011010
+content at logical address 54426 is: 53
+address: 0000111000100001, index: 0000000000001110, offset: 0000000000100001
+content at logical address 3617 is: 0
+address: 1100010111011100, index: 0000000011000101, offset: 0000000011011100
+content at logical address 50652 is: 0
+address: 1010000111101100, index: 0000000010100001, offset: 0000000011101100
+TLB HIT
+frame_index: 97, frame_base_location: 24832
+content at logical address 41452 is: 0
+address: 0100111100010001, index: 0000000001001111, offset: 0000000000010001
+content at logical address 20241 is: 0
+address: 0111101111101011, index: 0000000001111011, offset: 0000000011101011
+content at logical address 31723 is: -6
+address: 1101000111110011, index: 0000000011010001, offset: 0000000011110011
+frame_index: 20, frame_base_location: 5120
+content at logical address 53747 is: 124
+address: 0110111110000110, index: 0000000001101111, offset: 0000000010000110
+content at logical address 28550 is: 27
+address: 0101101101101010, index: 0000000001011011, offset: 0000000001101010
+content at logical address 23402 is: 22
+address: 0101001011010101, index: 0000000001010010, offset: 0000000011010101
+frame_index: 21, frame_base_location: 5376
+content at logical address 21205 is: 0
+address: 1101101101110101, index: 0000000011011011, offset: 0000000001110101
+content at logical address 56181 is: 0
+address: 1110000001111110, index: 0000000011100000, offset: 0000000001111110
+frame_index: 22, frame_base_location: 5632
+content at logical address 57470 is: 56
+address: 1001101111111101, index: 0000000010011011, offset: 0000000011111101
+frame_index: 23, frame_base_location: 5888
+content at logical address 39933 is: 0
+address: 1000100010010100, index: 0000000010001000, offset: 0000000010010100
+content at logical address 34964 is: 0
+address: 0110000011001101, index: 0000000001100000, offset: 0000000011001101
+frame_index: 24, frame_base_location: 6144
+content at logical address 24781 is: 0
+address: 1010001100010011, index: 0000000010100011, offset: 0000000000010011
+frame_index: 25, frame_base_location: 6400
+content at logical address 41747 is: -60
+address: 1111010001100100, index: 0000000011110100, offset: 0000000001100100
+TLB HIT
+frame_index: 16, frame_base_location: 4096
+content at logical address 62564 is: 0
+address: 1110010001011101, index: 0000000011100100, offset: 0000000001011101
+TLB HIT
+frame_index: 60, frame_base_location: 15360
+content at logical address 58461 is: 0
+address: 0101000101111010, index: 0000000001010001, offset: 0000000001111010
+frame_index: 26, frame_base_location: 6656
+content at logical address 20858 is: 20
+address: 1100000010010101, index: 0000000011000000, offset: 0000000010010101
+content at logical address 49301 is: 0
+address: 1001111001111100, index: 0000000010011110, offset: 0000000001111100
+frame_index: 27, frame_base_location: 6912
+content at logical address 40572 is: 0
+address: 0101110100100000, index: 0000000001011101, offset: 0000000000100000
+frame_index: 28, frame_base_location: 7168
+content at logical address 23840 is: 0
+address: 1000100111001110, index: 0000000010001001, offset: 0000000011001110
+frame_index: 29, frame_base_location: 7424
+content at logical address 35278 is: 34
+address: 1111010110111001, index: 0000000011110101, offset: 0000000010111001
+content at logical address 62905 is: 0
+address: 1101110101001010, index: 0000000011011101, offset: 0000000001001010
+content at logical address 56650 is: 55
+address: 0010101110001101, index: 0000000000101011, offset: 0000000010001101
+frame_index: 30, frame_base_location: 7680
+content at logical address 11149 is: 0
+address: 1001100000001000, index: 0000000010011000, offset: 0000000000001000
+frame_index: 31, frame_base_location: 7936
+content at logical address 38920 is: 0
+address: 0101101110000110, index: 0000000001011011, offset: 0000000010000110
+TLB HIT
+frame_index: 80, frame_base_location: 20480
+content at logical address 23430 is: 22
+address: 1110000011111000, index: 0000000011100000, offset: 0000000011111000
+TLB HIT
+frame_index: 22, frame_base_location: 5632
+content at logical address 57592 is: 0
+address: 0000110000001000, index: 0000000000001100, offset: 0000000000001000
+frame_index: 32, frame_base_location: 8192
+content at logical address 3080 is: 0
+address: 0001101000010101, index: 0000000000011010, offset: 0000000000010101
+frame_index: 33, frame_base_location: 8448
+content at logical address 6677 is: 0
+address: 1100011000010000, index: 0000000011000110, offset: 0000000000010000
+content at logical address 50704 is: 0
+address: 1100101010101011, index: 0000000011001010, offset: 0000000010101011
+content at logical address 51883 is: -86
+address: 1111010101001111, index: 0000000011110101, offset: 0000000001001111
+TLB HIT
+frame_index: 111, frame_base_location: 28416
+content at logical address 62799 is: 83
+address: 0100111011011100, index: 0000000001001110, offset: 0000000011011100
+frame_index: 34, frame_base_location: 8704
+content at logical address 20188 is: 0
+address: 0000010011011101, index: 0000000000000100, offset: 0000000011011101
+frame_index: 35, frame_base_location: 8960
+content at logical address 1245 is: 0
+address: 0010111110111100, index: 0000000000101111, offset: 0000000010111100
+frame_index: 36, frame_base_location: 9216
+content at logical address 12220 is: 0
+address: 0100010011000010, index: 0000000001000100, offset: 0000000011000010
+frame_index: 37, frame_base_location: 9472
+content at logical address 17602 is: 17
+address: 0110111111000001, index: 0000000001101111, offset: 0000000011000001
+TLB HIT
+frame_index: 109, frame_base_location: 27904
+content at logical address 28609 is: 0
+address: 1010011011000110, index: 0000000010100110, offset: 0000000011000110
+content at logical address 42694 is: 41
+address: 0111010010000010, index: 0000000001110100, offset: 0000000010000010
+frame_index: 38, frame_base_location: 9728
+content at logical address 29826 is: 29
+address: 0011011000000011, index: 0000000000110110, offset: 0000000000000011
+content at logical address 13827 is: -128
+address: 0110101011001000, index: 0000000001101010, offset: 0000000011001000
+content at logical address 27336 is: 0
+address: 1101000001011111, index: 0000000011010000, offset: 0000000001011111
+content at logical address 53343 is: 23
+address: 0010110100001101, index: 0000000000101101, offset: 0000000000001101
+frame_index: 39, frame_base_location: 9984
+content at logical address 11533 is: 0
+address: 1010001011110001, index: 0000000010100010, offset: 0000000011110001
+frame_index: 40, frame_base_location: 10240
+content at logical address 41713 is: 0
+address: 1000010001100010, index: 0000000010000100, offset: 0000000001100010
+frame_index: 41, frame_base_location: 10496
+content at logical address 33890 is: 33
+address: 0001001100011110, index: 0000000000010011, offset: 0000000000011110
+content at logical address 4894 is: 4
+address: 1110000011111111, index: 0000000011100000, offset: 0000000011111111
+TLB HIT
+frame_index: 22, frame_base_location: 5632
+content at logical address 57599 is: 63
+address: 0000111100011110, index: 0000000000001111, offset: 0000000000011110
+content at logical address 3870 is: 3
+address: 1110010011111110, index: 0000000011100100, offset: 0000000011111110
+content at logical address 58622 is: 57
+address: 0111010001010100, index: 0000000001110100, offset: 0000000001010100
+TLB HIT
+frame_index: 38, frame_base_location: 9728
+content at logical address 29780 is: 0
+address: 1111010001011001, index: 0000000011110100, offset: 0000000001011001
+content at logical address 62553 is: 0
+address: 0000100011111111, index: 0000000000001000, offset: 0000000011111111
+content at logical address 2303 is: 63
+address: 1100101011001011, index: 0000000011001010, offset: 0000000011001011
+TLB HIT
+frame_index: 106, frame_base_location: 27136
+content at logical address 51915 is: -78
+address: 0001100001101011, index: 0000000000011000, offset: 0000000001101011
+frame_index: 42, frame_base_location: 10752
+content at logical address 6251 is: 26
+address: 1001010011011011, index: 0000000010010100, offset: 0000000011011011
+content at logical address 38107 is: 54
+address: 1110011110111101, index: 0000000011100111, offset: 0000000010111101
+frame_index: 43, frame_base_location: 11008
+content at logical address 59325 is: 0
+address: 1110111101101111, index: 0000000011101111, offset: 0000000001101111
+frame_index: 44, frame_base_location: 11264
+content at logical address 61295 is: -37
+address: 0110100001001011, index: 0000000001101000, offset: 0000000001001011
+frame_index: 45, frame_base_location: 11520
+content at logical address 26699 is: 18
+address: 1100011111110100, index: 0000000011000111, offset: 0000000011110100
+frame_index: 46, frame_base_location: 11776
+content at logical address 51188 is: 0
+address: 1110100001111111, index: 0000000011101000, offset: 0000000001111111
+content at logical address 59519 is: 31
+address: 0001110010110001, index: 0000000000011100, offset: 0000000010110001
+frame_index: 47, frame_base_location: 12032
+content at logical address 7345 is: 0
+address: 0100111101100101, index: 0000000001001111, offset: 0000000001100101
+content at logical address 20325 is: 0
+address: 1001101011010001, index: 0000000010011010, offset: 0000000011010001
+frame_index: 48, frame_base_location: 12288
+content at logical address 39633 is: 0
+address: 0000011000011010, index: 0000000000000110, offset: 0000000000011010
+frame_index: 49, frame_base_location: 12544
+content at logical address 1562 is: 1
+address: 0001110110011100, index: 0000000000011101, offset: 0000000010011100
+frame_index: 50, frame_base_location: 12800
+content at logical address 7580 is: 0
+address: 0001111111101010, index: 0000000000011111, offset: 0000000011101010
+content at logical address 8170 is: 7
+address: 1111001100110000, index: 0000000011110011, offset: 0000000000110000
+content at logical address 62256 is: 0
+address: 1000101111101111, index: 0000000010001011, offset: 0000000011101111
+frame_index: 51, frame_base_location: 13056
+content at logical address 35823 is: -5
+address: 0110110010001110, index: 0000000001101100, offset: 0000000010001110
+frame_index: 52, frame_base_location: 13312
+content at logical address 27790 is: 27
+address: 0011001110000111, index: 0000000000110011, offset: 0000000010000111
+frame_index: 53, frame_base_location: 13568
+content at logical address 13191 is: -31
+address: 0010011000101100, index: 0000000000100110, offset: 0000000000101100
+frame_index: 54, frame_base_location: 13824
+content at logical address 9772 is: 0
+address: 0001110100110101, index: 0000000000011101, offset: 0000000000110101
+TLB HIT
+frame_index: 50, frame_base_location: 12800
+content at logical address 7477 is: 0
+address: 1010110110100111, index: 0000000010101101, offset: 0000000010100111
+frame_index: 55, frame_base_location: 14080
+content at logical address 44455 is: 105
+address: 1110100010011010, index: 0000000011101000, offset: 0000000010011010
+TLB HIT
+frame_index: 101, frame_base_location: 25856
+content at logical address 59546 is: 58
+address: 1100000011000011, index: 0000000011000000, offset: 0000000011000011
+frame_index: 56, frame_base_location: 14336
+content at logical address 49347 is: 48
+address: 1000111010111011, index: 0000000010001110, offset: 0000000010111011
+frame_index: 57, frame_base_location: 14592
+content at logical address 36539 is: -82
+address: 0011000010100101, index: 0000000000110000, offset: 0000000010100101
+frame_index: 58, frame_base_location: 14848
+content at logical address 12453 is: 0
+address: 1100000111101000, index: 0000000011000001, offset: 0000000011101000
+frame_index: 59, frame_base_location: 15104
+content at logical address 49640 is: 0
+address: 0110111010000010, index: 0000000001101110, offset: 0000000010000010
+content at logical address 28290 is: 27
+address: 1010111100010001, index: 0000000010101111, offset: 0000000000010001
+frame_index: 60, frame_base_location: 15360
+content at logical address 44817 is: 0
+address: 0010000101110101, index: 0000000000100001, offset: 0000000001110101
+content at logical address 8565 is: 0
+address: 0100000000001111, index: 0000000001000000, offset: 0000000000001111
+frame_index: 61, frame_base_location: 15616
+content at logical address 16399 is: 3
+address: 1010001111001110, index: 0000000010100011, offset: 0000000011001110
+content at logical address 41934 is: 40
+address: 1011000110010001, index: 0000000010110001, offset: 0000000010010001
+frame_index: 62, frame_base_location: 15872
+content at logical address 45457 is: 0
+address: 1000010001000000, index: 0000000010000100, offset: 0000000001000000
+content at logical address 33856 is: 0
+address: 0100110000101010, index: 0000000001001100, offset: 0000000000101010
+content at logical address 19498 is: 19
+address: 0100010011111101, index: 0000000001000100, offset: 0000000011111101
+content at logical address 17661 is: 0
+address: 1111100101010101, index: 0000000011111001, offset: 0000000001010101
+content at logical address 63829 is: 0
+address: 1010010000110010, index: 0000000010100100, offset: 0000000000110010
+frame_index: 63, frame_base_location: 16128
+content at logical address 42034 is: 41
+address: 0111000100000000, index: 0000000001110001, offset: 0000000000000000
+content at logical address 28928 is: 0
+address: 0111011111110111, index: 0000000001110111, offset: 0000000011110111
+frame_index: 64, frame_base_location: 16384
+content at logical address 30711 is: -3
+address: 0010001001100000, index: 0000000000100010, offset: 0000000001100000
+frame_index: 65, frame_base_location: 16640
+content at logical address 8800 is: 0
+address: 1100110001101111, index: 0000000011001100, offset: 0000000001101111
+frame_index: 66, frame_base_location: 16896
+content at logical address 52335 is: 27
+address: 1001011101110111, index: 0000000010010111, offset: 0000000001110111
+frame_index: 67, frame_base_location: 17152
+content at logical address 38775 is: -35
+address: 1100110111100000, index: 0000000011001101, offset: 0000000011100000
+content at logical address 52704 is: 0
+address: 0101111100111100, index: 0000000001011111, offset: 0000000000111100
+frame_index: 68, frame_base_location: 17408
+content at logical address 24380 is: 0
+address: 0100110010010010, index: 0000000001001100, offset: 0000000010010010
+TLB HIT
+frame_index: 88, frame_base_location: 22528
+content at logical address 19602 is: 19
+address: 1110001010001110, index: 0000000011100010, offset: 0000000010001110
+frame_index: 69, frame_base_location: 17664
+content at logical address 57998 is: 56
+address: 0000101101100111, index: 0000000000001011, offset: 0000000001100111
+frame_index: 70, frame_base_location: 17920
+content at logical address 2919 is: -39
+address: 0010000010101010, index: 0000000000100000, offset: 0000000010101010
+frame_index: 71, frame_base_location: 18176
+content at logical address 8362 is: 8
+address: 0100010111011100, index: 0000000001000101, offset: 0000000011011100
+frame_index: 72, frame_base_location: 18432
+content at logical address 17884 is: 0
+address: 1011001010101001, index: 0000000010110010, offset: 0000000010101001
+frame_index: 73, frame_base_location: 18688
+content at logical address 45737 is: 0
+address: 1011101100010110, index: 0000000010111011, offset: 0000000000010110
+content at logical address 47894 is: 46
+address: 1110100100010011, index: 0000000011101001, offset: 0000000000010011
+frame_index: 74, frame_base_location: 18944
+content at logical address 59667 is: 68
+address: 0010100010010001, index: 0000000000101000, offset: 0000000010010001
+frame_index: 75, frame_base_location: 19200
+content at logical address 10385 is: 0
+address: 1100111000101110, index: 0000000011001110, offset: 0000000000101110
+frame_index: 76, frame_base_location: 19456
+content at logical address 52782 is: 51
+address: 1111101110100000, index: 0000000011111011, offset: 0000000010100000
+frame_index: 77, frame_base_location: 19712
+content at logical address 64416 is: 0
+address: 1001111111110010, index: 0000000010011111, offset: 0000000011110010
+frame_index: 78, frame_base_location: 19968
+content at logical address 40946 is: 39
+address: 0100000110001010, index: 0000000001000001, offset: 0000000010001010
+frame_index: 79, frame_base_location: 20224
+content at logical address 16778 is: 16
+address: 0110101000010111, index: 0000000001101010, offset: 0000000000010111
+content at logical address 27159 is: -123
+address: 0101111100000100, index: 0000000001011111, offset: 0000000000000100
+TLB HIT
+frame_index: 68, frame_base_location: 17408
+content at logical address 24324 is: 0
+address: 0111111011000010, index: 0000000001111110, offset: 0000000011000010
+frame_index: 80, frame_base_location: 20480
+content at logical address 32450 is: 31
+address: 0010001110010100, index: 0000000000100011, offset: 0000000010010100
+frame_index: 81, frame_base_location: 20736
+content at logical address 9108 is: 0
+address: 1111111100011001, index: 0000000011111111, offset: 0000000000011001
+content at logical address 65305 is: 0
+address: 0100110001110111, index: 0000000001001100, offset: 0000000001110111
+TLB HIT
+frame_index: 88, frame_base_location: 22528
+content at logical address 19575 is: 29
+address: 0010101101101101, index: 0000000000101011, offset: 0000000001101101
+content at logical address 11117 is: 0
+address: 1111111010010010, index: 0000000011111110, offset: 0000000010010010
+frame_index: 82, frame_base_location: 20992
+content at logical address 65170 is: 63
+address: 1110001010011101, index: 0000000011100010, offset: 0000000010011101
+TLB HIT
+frame_index: 69, frame_base_location: 17664
+content at logical address 58013 is: 0
+address: 1111000011101100, index: 0000000011110000, offset: 0000000011101100
+content at logical address 61676 is: 0
+address: 1111100000010110, index: 0000000011111000, offset: 0000000000010110
+content at logical address 63510 is: 62
+address: 0100010000110010, index: 0000000001000100, offset: 0000000000110010
+TLB HIT
+frame_index: 37, frame_base_location: 9472
+content at logical address 17458 is: 17
+address: 1101010110010011, index: 0000000011010101, offset: 0000000010010011
+frame_index: 83, frame_base_location: 21248
+content at logical address 54675 is: 100
+address: 0000011010110001, index: 0000000000000110, offset: 0000000010110001
+content at logical address 1713 is: 0
+address: 1101011101000001, index: 0000000011010111, offset: 0000000001000001
+frame_index: 84, frame_base_location: 21504
+content at logical address 55105 is: 0
+address: 1111111100101001, index: 0000000011111111, offset: 0000000000101001
+TLB HIT
+frame_index: 119, frame_base_location: 30464
+content at logical address 65321 is: 0
+address: 1011000011011110, index: 0000000010110000, offset: 0000000011011110
+frame_index: 85, frame_base_location: 21760
+content at logical address 45278 is: 44
+address: 0110011010010000, index: 0000000001100110, offset: 0000000010010000
+frame_index: 86, frame_base_location: 22016
+content at logical address 26256 is: 0
+address: 1111101011000110, index: 0000000011111010, offset: 0000000011000110
+frame_index: 87, frame_base_location: 22272
+content at logical address 64198 is: 62
+address: 0111001100000001, index: 0000000001110011, offset: 0000000000000001
+frame_index: 88, frame_base_location: 22528
+content at logical address 29441 is: 0
+address: 0000011110001000, index: 0000000000000111, offset: 0000000010001000
+content at logical address 1928 is: 0
+address: 1001101000000001, index: 0000000010011010, offset: 0000000000000001
+content at logical address 39425 is: 0
+address: 0111110100000000, index: 0000000001111101, offset: 0000000000000000
+frame_index: 89, frame_base_location: 22784
+content at logical address 32000 is: 0
+address: 0110111110000101, index: 0000000001101111, offset: 0000000010000101
+content at logical address 28549 is: 0
+address: 1011010011010111, index: 0000000010110100, offset: 0000000011010111
+frame_index: 90, frame_base_location: 23040
+content at logical address 46295 is: 53
+address: 0101100011110100, index: 0000000001011000, offset: 0000000011110100
+frame_index: 91, frame_base_location: 23296
+content at logical address 22772 is: 0
+address: 1110001101110100, index: 0000000011100011, offset: 0000000001110100
+content at logical address 58228 is: 0
+address: 1111100000100101, index: 0000000011111000, offset: 0000000000100101
+TLB HIT
+frame_index: 110, frame_base_location: 28160
+content at logical address 63525 is: 0
+address: 0111111101011010, index: 0000000001111111, offset: 0000000001011010
+frame_index: 92, frame_base_location: 23552
+content at logical address 32602 is: 31
+address: 1011010001110011, index: 0000000010110100, offset: 0000000001110011
+TLB HIT
+frame_index: 90, frame_base_location: 23040
+content at logical address 46195 is: 28
+address: 1101101000101001, index: 0000000011011010, offset: 0000000000101001
+content at logical address 55849 is: 0
+address: 1011010101110110, index: 0000000010110101, offset: 0000000001110110
+frame_index: 93, frame_base_location: 23808
+content at logical address 46454 is: 45
+address: 0001110100111111, index: 0000000000011101, offset: 0000000000111111
+content at logical address 7487 is: 79
+address: 1000010001010111, index: 0000000010000100, offset: 0000000001010111
+content at logical address 33879 is: 21
+address: 1010010000010100, index: 0000000010100100, offset: 0000000000010100
+content at logical address 42004 is: 0
+address: 0010000110010111, index: 0000000000100001, offset: 0000000010010111
+frame_index: 94, frame_base_location: 24064
+content at logical address 8599 is: 101
+address: 0100100011010001, index: 0000000001001000, offset: 0000000011010001
+frame_index: 95, frame_base_location: 24320
+content at logical address 18641 is: 0
+address: 1011111101110111, index: 0000000010111111, offset: 0000000001110111
+frame_index: 96, frame_base_location: 24576
+content at logical address 49015 is: -35
+address: 0110100011001110, index: 0000000001101000, offset: 0000000011001110
+content at logical address 26830 is: 26
+address: 1000011111000010, index: 0000000010000111, offset: 0000000011000010
+frame_index: 97, frame_base_location: 24832
+content at logical address 34754 is: 33
+address: 0011100101001100, index: 0000000000111001, offset: 0000000001001100
+content at logical address 14668 is: 0
+address: 1001010111011010, index: 0000000010010101, offset: 0000000011011010
+frame_index: 98, frame_base_location: 25088
+content at logical address 38362 is: 37
+address: 1001011110000111, index: 0000000010010111, offset: 0000000010000111
+content at logical address 38791 is: -31
+address: 0001000001001011, index: 0000000000010000, offset: 0000000001001011
+frame_index: 99, frame_base_location: 25344
+content at logical address 4171 is: 18
+address: 1011001110010111, index: 0000000010110011, offset: 0000000010010111
+frame_index: 100, frame_base_location: 25600
+content at logical address 45975 is: -27
+address: 0011100100011111, index: 0000000000111001, offset: 0000000000011111
+TLB HIT
+frame_index: 2, frame_base_location: 512
+content at logical address 14623 is: 71
+address: 1111001110111001, index: 0000000011110011, offset: 0000000010111001
+frame_index: 101, frame_base_location: 25856
+content at logical address 62393 is: 0
+address: 1111110010010010, index: 0000000011111100, offset: 0000000010010010
+frame_index: 102, frame_base_location: 26112
+content at logical address 64658 is: 63
+address: 0010101011010011, index: 0000000000101010, offset: 0000000011010011
+frame_index: 103, frame_base_location: 26368
+content at logical address 10963 is: -76
+address: 0010001101100010, index: 0000000000100011, offset: 0000000001100010
+content at logical address 9058 is: 8
+address: 1100011101010111, index: 0000000011000111, offset: 0000000001010111
+content at logical address 51031 is: -43
+address: 0111111010101001, index: 0000000001111110, offset: 0000000010101001
+content at logical address 32425 is: 0
+address: 1011000110101011, index: 0000000010110001, offset: 0000000010101011
+content at logical address 45483 is: 106
+address: 1010111001000011, index: 0000000010101110, offset: 0000000001000011
+frame_index: 104, frame_base_location: 26624
+content at logical address 44611 is: -112
+address: 1111100010110000, index: 0000000011111000, offset: 0000000010110000
+content at logical address 63664 is: 0
+address: 1101011010001000, index: 0000000011010110, offset: 0000000010001000
+frame_index: 105, frame_base_location: 26880
+content at logical address 54920 is: 0
+address: 0001110111101111, index: 0000000000011101, offset: 0000000011101111
+TLB HIT
+frame_index: 50, frame_base_location: 12800
+content at logical address 7663 is: 123
+address: 1101110010100000, index: 0000000011011100, offset: 0000000010100000
+frame_index: 106, frame_base_location: 27136
+content at logical address 56480 is: 0
+address: 0000010111010001, index: 0000000000000101, offset: 0000000011010001
+frame_index: 107, frame_base_location: 27392
+content at logical address 1489 is: 0
+address: 0110111100010110, index: 0000000001101111, offset: 0000000000010110
+TLB HIT
+frame_index: 109, frame_base_location: 27904
+content at logical address 28438 is: 27
+address: 1111111110101001, index: 0000000011111111, offset: 0000000010101001
+content at logical address 65449 is: 0
+address: 0011000010011001, index: 0000000000110000, offset: 0000000010011001
+content at logical address 12441 is: 0
+address: 1110010010100010, index: 0000000011100100, offset: 0000000010100010
+frame_index: 108, frame_base_location: 27648
+content at logical address 58530 is: 57
+address: 1111100001010010, index: 0000000011111000, offset: 0000000001010010
+TLB HIT
+frame_index: 110, frame_base_location: 28160
+content at logical address 63570 is: 62
+address: 0110011010001011, index: 0000000001100110, offset: 0000000010001011
+content at logical address 26251 is: -94
+address: 0011111001100100, index: 0000000000111110, offset: 0000000001100100
+frame_index: 109, frame_base_location: 27904
+content at logical address 15972 is: 0
+address: 1000101111110010, index: 0000000010001011, offset: 0000000011110010
+content at logical address 35826 is: 34
+address: 0001010101110011, index: 0000000000010101, offset: 0000000001110011
+frame_index: 110, frame_base_location: 28160
+content at logical address 5491 is: 92
+address: 1101001111101101, index: 0000000011010011, offset: 0000000011101101
+frame_index: 111, frame_base_location: 28416
+content at logical address 54253 is: 0
+address: 1100000111110111, index: 0000000011000001, offset: 0000000011110111
+content at logical address 49655 is: 125
+address: 0001011011101100, index: 0000000000010110, offset: 0000000011101100
+frame_index: 112, frame_base_location: 28672
+content at logical address 5868 is: 0
+address: 0100111011000011, index: 0000000001001110, offset: 0000000011000011
+content at logical address 20163 is: -80
+address: 1100011110000111, index: 0000000011000111, offset: 0000000010000111
+TLB HIT
+frame_index: 46, frame_base_location: 11776
+content at logical address 51079 is: -31
+address: 0101001110010110, index: 0000000001010011, offset: 0000000010010110
+frame_index: 113, frame_base_location: 28928
+content at logical address 21398 is: 20
+address: 0111111111110100, index: 0000000001111111, offset: 0000000011110100
+content at logical address 32756 is: 0
+address: 1111101011000100, index: 0000000011111010, offset: 0000000011000100
+content at logical address 64196 is: 0
+address: 1010100011010010, index: 0000000010101000, offset: 0000000011010010
+frame_index: 114, frame_base_location: 29184
+content at logical address 43218 is: 42
+address: 0101010001001111, index: 0000000001010100, offset: 0000000001001111
+frame_index: 115, frame_base_location: 29440
+content at logical address 21583 is: 19
+address: 0110000111111110, index: 0000000001100001, offset: 0000000011111110
+frame_index: 116, frame_base_location: 29696
+content at logical address 25086 is: 24
+address: 1011000111001011, index: 0000000010110001, offset: 0000000011001011
+TLB HIT
+frame_index: 62, frame_base_location: 15872
+content at logical address 45515 is: 114
+address: 0011001001011101, index: 0000000000110010, offset: 0000000001011101
+content at logical address 12893 is: 0
+address: 0101100110000010, index: 0000000001011001, offset: 0000000010000010
+frame_index: 117, frame_base_location: 29952
+content at logical address 22914 is: 22
+address: 1110011001011001, index: 0000000011100110, offset: 0000000001011001
+frame_index: 118, frame_base_location: 30208
+content at logical address 58969 is: 0
+address: 0100111001111110, index: 0000000001001110, offset: 0000000001111110
+TLB HIT
+frame_index: 34, frame_base_location: 8704
+content at logical address 20094 is: 19
+address: 0011010110100010, index: 0000000000110101, offset: 0000000010100010
+frame_index: 119, frame_base_location: 30464
+content at logical address 13730 is: 13
+address: 1010110000011011, index: 0000000010101100, offset: 0000000000011011
+frame_index: 120, frame_base_location: 30720
+content at logical address 44059 is: 6
+address: 0111000100000011, index: 0000000001110001, offset: 0000000000000011
+frame_index: 121, frame_base_location: 30976
+content at logical address 28931 is: 64
+address: 0011010011011101, index: 0000000000110100, offset: 0000000011011101
+content at logical address 13533 is: 0
+address: 1000000101101110, index: 0000000010000001, offset: 0000000001101110
+frame_index: 122, frame_base_location: 31232
+content at logical address 33134 is: 32
+address: 0110111101000011, index: 0000000001101111, offset: 0000000001000011
+frame_index: 123, frame_base_location: 31488
+content at logical address 28483 is: -48
+address: 0000010011000100, index: 0000000000000100, offset: 0000000011000100
+content at logical address 1220 is: 0
+address: 1001010100011110, index: 0000000010010101, offset: 0000000000011110
+content at logical address 38174 is: 37
+address: 1101000011111110, index: 0000000011010000, offset: 0000000011111110
+content at logical address 53502 is: 52
+address: 1010100101000000, index: 0000000010101001, offset: 0000000001000000
+frame_index: 124, frame_base_location: 31744
+content at logical address 43328 is: 0
+address: 0001001101101010, index: 0000000000010011, offset: 0000000001101010
+frame_index: 125, frame_base_location: 32000
+content at logical address 4970 is: 4
+address: 0001111110011010, index: 0000000000011111, offset: 0000000010011010
+content at logical address 8090 is: 7
+address: 0000101001100101, index: 0000000000001010, offset: 0000000001100101
+frame_index: 126, frame_base_location: 32256
+content at logical address 2661 is: 0
+address: 1101001010001111, index: 0000000011010010, offset: 0000000010001111
+frame_index: 127, frame_base_location: 32512
+content at logical address 53903 is: -93
+address: 0010101100010001, index: 0000000000101011, offset: 0000000000010001
+content at logical address 11025 is: 0
+address: 0110100000000011, index: 0000000001101000, offset: 0000000000000011
+content at logical address 26627 is: 0
+address: 0100011011000101, index: 0000000001000110, offset: 0000000011000101
+frame_index: 0, frame_base_location: 0
+content at logical address 18117 is: 0
+address: 0011100010101001, index: 0000000000111000, offset: 0000000010101001
+frame_index: 1, frame_base_location: 256
+content at logical address 14505 is: 0
+address: 1111000001011000, index: 0000000011110000, offset: 0000000001011000
+frame_index: 2, frame_base_location: 512
+content at logical address 61528 is: 0
+address: 0100111111000111, index: 0000000001001111, offset: 0000000011000111
+frame_index: 3, frame_base_location: 768
+content at logical address 20423 is: -15
+address: 0110100101010010, index: 0000000001101001, offset: 0000000001010010
+frame_index: 4, frame_base_location: 1024
+content at logical address 26962 is: 26
+address: 1000111000101000, index: 0000000010001110, offset: 0000000000101000
+content at logical address 36392 is: 0
+address: 0010110001100101, index: 0000000000101100, offset: 0000000001100101
+frame_index: 5, frame_base_location: 1280
+content at logical address 11365 is: 0
+address: 1100011011000010, index: 0000000011000110, offset: 0000000011000010
+frame_index: 6, frame_base_location: 1536
+content at logical address 50882 is: 49
+address: 1010001011000100, index: 0000000010100010, offset: 0000000011000100
+content at logical address 41668 is: 0
+address: 0111011100100001, index: 0000000001110111, offset: 0000000000100001
+content at logical address 30497 is: 0
+address: 1000110101111000, index: 0000000010001101, offset: 0000000001111000
+frame_index: 7, frame_base_location: 1792
+content at logical address 36216 is: 0
+address: 0001010111110011, index: 0000000000010101, offset: 0000000011110011
+content at logical address 5619 is: 124
+address: 1001000001110111, index: 0000000010010000, offset: 0000000001110111
+frame_index: 8, frame_base_location: 2048
+content at logical address 36983 is: 29
+address: 1110100010100101, index: 0000000011101000, offset: 0000000010100101
+frame_index: 9, frame_base_location: 2304
+content at logical address 59557 is: 0
+address: 1000111100110111, index: 0000000010001111, offset: 0000000000110111
+content at logical address 36663 is: -51
+address: 1000111001010100, index: 0000000010001110, offset: 0000000001010100
+TLB HIT
+frame_index: 57, frame_base_location: 14592
+content at logical address 36436 is: 0
+address: 1001000011000001, index: 0000000010010000, offset: 0000000011000001
+TLB HIT
+frame_index: 8, frame_base_location: 2048
+content at logical address 37057 is: 0
+address: 0101110000100001, index: 0000000001011100, offset: 0000000000100001
+frame_index: 10, frame_base_location: 2560
+content at logical address 23585 is: 0
+address: 1110010110100111, index: 0000000011100101, offset: 0000000010100111
+frame_index: 11, frame_base_location: 2816
+content at logical address 58791 is: 105
+address: 1011011001001010, index: 0000000010110110, offset: 0000000001001010
+frame_index: 12, frame_base_location: 3072
+content at logical address 46666 is: 45
+address: 1111101111011011, index: 0000000011111011, offset: 0000000011011011
+content at logical address 64475 is: -10
+address: 0101010001101111, index: 0000000001010100, offset: 0000000001101111
+content at logical address 21615 is: 27
+address: 1010000010000010, index: 0000000010100000, offset: 0000000010000010
+frame_index: 13, frame_base_location: 3328
+content at logical address 41090 is: 40
+address: 0000011011101011, index: 0000000000000110, offset: 0000000011101011
+content at logical address 1771 is: -70
+address: 1011100110011001, index: 0000000010111001, offset: 0000000010011001
+frame_index: 14, frame_base_location: 3584
+content at logical address 47513 is: 0
+address: 1001100110101010, index: 0000000010011001, offset: 0000000010101010
+frame_index: 15, frame_base_location: 3840
+content at logical address 39338 is: 38
+address: 0000010101101110, index: 0000000000000101, offset: 0000000001101110
+content at logical address 1390 is: 1
+address: 1001011101110100, index: 0000000010010111, offset: 0000000001110100
+content at logical address 38772 is: 0
+address: 1110001100100101, index: 0000000011100011, offset: 0000000000100101
+frame_index: 16, frame_base_location: 4096
+content at logical address 58149 is: 0
+address: 0001110000011100, index: 0000000000011100, offset: 0000000000011100
+content at logical address 7196 is: 0
+address: 0010001110100011, index: 0000000000100011, offset: 0000000010100011
+content at logical address 9123 is: -24
+address: 0001110101000011, index: 0000000000011101, offset: 0000000001000011
+content at logical address 7491 is: 80
+address: 1111010010011000, index: 0000000011110100, offset: 0000000010011000
+frame_index: 17, frame_base_location: 4352
+content at logical address 62616 is: 0
+address: 0011110001001100, index: 0000000000111100, offset: 0000000001001100
+frame_index: 18, frame_base_location: 4608
+content at logical address 15436 is: 0
+address: 0100010001010011, index: 0000000001000100, offset: 0000000001010011
+content at logical address 17491 is: 20
+address: 1101000110011000, index: 0000000011010001, offset: 0000000010011000
+content at logical address 53656 is: 0
+address: 0110011101010001, index: 0000000001100111, offset: 0000000001010001
+frame_index: 19, frame_base_location: 4864
+content at logical address 26449 is: 0
+address: 1000100001110111, index: 0000000010001000, offset: 0000000001110111
+frame_index: 20, frame_base_location: 5120
+content at logical address 34935 is: 29
+address: 0100110110011000, index: 0000000001001101, offset: 0000000010011000
+frame_index: 21, frame_base_location: 5376
+content at logical address 19864 is: 0
+address: 1100100010111100, index: 0000000011001000, offset: 0000000010111100
+frame_index: 22, frame_base_location: 5632
+content at logical address 51388 is: 0
+address: 0011101100110011, index: 0000000000111011, offset: 0000000000110011
+frame_index: 23, frame_base_location: 5888
+content at logical address 15155 is: -52
+address: 1111110100000111, index: 0000000011111101, offset: 0000000000000111
+frame_index: 24, frame_base_location: 6144
+content at logical address 64775 is: 65
+address: 1011101101100001, index: 0000000010111011, offset: 0000000001100001
+frame_index: 25, frame_base_location: 6400
+content at logical address 47969 is: 0
+address: 0011111110111011, index: 0000000000111111, offset: 0000000010111011
+frame_index: 26, frame_base_location: 6656
+content at logical address 16315 is: -18
+address: 0000010100111110, index: 0000000000000101, offset: 0000000000111110
+TLB HIT
+frame_index: 107, frame_base_location: 27392
+content at logical address 1342 is: 1
+address: 1100011111110001, index: 0000000011000111, offset: 0000000011110001
+content at logical address 51185 is: 0
+address: 0001011110011011, index: 0000000000010111, offset: 0000000010011011
+frame_index: 27, frame_base_location: 6912
+content at logical address 6043 is: -26
+address: 0101001110010110, index: 0000000001010011, offset: 0000000010010110
+content at logical address 21398 is: 20
+address: 0000110011001001, index: 0000000000001100, offset: 0000000011001001
+content at logical address 3273 is: 0
+address: 0010010010011010, index: 0000000000100100, offset: 0000000010011010
+frame_index: 28, frame_base_location: 7168
+content at logical address 9370 is: 9
+address: 1000101010000111, index: 0000000010001010, offset: 0000000010000111
+frame_index: 29, frame_base_location: 7424
+content at logical address 35463 is: -95
+address: 0110111000101101, index: 0000000001101110, offset: 0000000000101101
+frame_index: 30, frame_base_location: 7680
+content at logical address 28205 is: 0
+address: 0000100100101111, index: 0000000000001001, offset: 0000000000101111
+frame_index: 31, frame_base_location: 7936
+content at logical address 2351 is: 75
+address: 0111000101000111, index: 0000000001110001, offset: 0000000001000111
+content at logical address 28999 is: 81
+address: 1011101001010011, index: 0000000010111010, offset: 0000000001010011
+frame_index: 32, frame_base_location: 8192
+content at logical address 47699 is: -108
+address: 1011011100010110, index: 0000000010110111, offset: 0000000000010110
+frame_index: 33, frame_base_location: 8448
+content at logical address 46870 is: 45
+address: 0101011100100111, index: 0000000001010111, offset: 0000000000100111
+frame_index: 34, frame_base_location: 8704
+content at logical address 22311 is: -55
+address: 0101011001101100, index: 0000000001010110, offset: 0000000001101100
+frame_index: 35, frame_base_location: 8960
+content at logical address 22124 is: 0
+address: 0101011110011011, index: 0000000001010111, offset: 0000000010011011
+TLB HIT
+frame_index: 34, frame_base_location: 8704
+content at logical address 22427 is: -26
+address: 1100000011000000, index: 0000000011000000, offset: 0000000011000000
+content at logical address 49344 is: 0
+address: 0101101010111000, index: 0000000001011010, offset: 0000000010111000
+frame_index: 36, frame_base_location: 9216
+content at logical address 23224 is: 0
+address: 0001010110001010, index: 0000000000010101, offset: 0000000010001010
+content at logical address 5514 is: 5
+address: 0101000000011000, index: 0000000001010000, offset: 0000000000011000
+frame_index: 37, frame_base_location: 9472
+content at logical address 20504 is: 0
+address: 0000000101111000, index: 0000000000000001, offset: 0000000001111000
+frame_index: 38, frame_base_location: 9728
+content at logical address 376 is: 0
+address: 0000011111011110, index: 0000000000000111, offset: 0000000011011110
+frame_index: 39, frame_base_location: 9984
+content at logical address 2014 is: 1
+address: 1001011100101100, index: 0000000010010111, offset: 0000000000101100
+content at logical address 38700 is: 0
+address: 0011001100101010, index: 0000000000110011, offset: 0000000000101010
+content at logical address 13098 is: 12
+address: 1111001111100011, index: 0000000011110011, offset: 0000000011100011
+content at logical address 62435 is: -8
+address: 1011101110101110, index: 0000000010111011, offset: 0000000010101110
+TLB HIT
+frame_index: 25, frame_base_location: 6400
+content at logical address 48046 is: 46
+address: 1111011111101000, index: 0000000011110111, offset: 0000000011101000
+frame_index: 40, frame_base_location: 10240
+content at logical address 63464 is: 0
+address: 0011000111111110, index: 0000000000110001, offset: 0000000011111110
+frame_index: 41, frame_base_location: 10496
+content at logical address 12798 is: 12
+address: 1100011111101010, index: 0000000011000111, offset: 0000000011101010
+TLB HIT
+frame_index: 46, frame_base_location: 11776
+content at logical address 51178 is: 49
+address: 0010000110110011, index: 0000000000100001, offset: 0000000010110011
+content at logical address 8627 is: 108
+address: 0110100111001011, index: 0000000001101001, offset: 0000000011001011
+content at logical address 27083 is: 114
+address: 1011100001011110, index: 0000000010111000, offset: 0000000001011110
+frame_index: 42, frame_base_location: 10752
+content at logical address 47198 is: 46
+address: 1010101111110101, index: 0000000010101011, offset: 0000000011110101
+frame_index: 43, frame_base_location: 11008
+content at logical address 44021 is: 0
+address: 1000000000011000, index: 0000000010000000, offset: 0000000000011000
+frame_index: 44, frame_base_location: 11264
+content at logical address 32792 is: 0
+address: 1010101111011100, index: 0000000010101011, offset: 0000000011011100
+TLB HIT
+frame_index: 43, frame_base_location: 11008
+content at logical address 43996 is: 0
+address: 1010000010100110, index: 0000000010100000, offset: 0000000010100110
+content at logical address 41126 is: 40
+address: 1111101011110100, index: 0000000011111010, offset: 0000000011110100
+content at logical address 64244 is: 0
+address: 1001000010110111, index: 0000000010010000, offset: 0000000010110111
+content at logical address 37047 is: 45
+address: 1110101101111001, index: 0000000011101011, offset: 0000000001111001
+frame_index: 45, frame_base_location: 11520
+content at logical address 60281 is: 0
+address: 1100111010101000, index: 0000000011001110, offset: 0000000010101000
+content at logical address 52904 is: 0
+address: 0001111001011000, index: 0000000000011110, offset: 0000000001011000
+frame_index: 46, frame_base_location: 11776
+content at logical address 7768 is: 0
+address: 1101100000111111, index: 0000000011011000, offset: 0000000000111111
+frame_index: 47, frame_base_location: 12032
+content at logical address 55359 is: 15
+address: 0000110010011110, index: 0000000000001100, offset: 0000000010011110
+frame_index: 48, frame_base_location: 12288
+content at logical address 3230 is: 3
+address: 1010111100001101, index: 0000000010101111, offset: 0000000000001101
+content at logical address 44813 is: 0
+address: 0001000000010100, index: 0000000000010000, offset: 0000000000010100
+content at logical address 4116 is: 0
+address: 1111111011000110, index: 0000000011111110, offset: 0000000011000110
+content at logical address 65222 is: 63
+address: 0110110110110011, index: 0000000001101101, offset: 0000000010110011
+frame_index: 49, frame_base_location: 12544
+content at logical address 28083 is: 108
+address: 1110110011110100, index: 0000000011101100, offset: 0000000011110100
+frame_index: 50, frame_base_location: 12800
+content at logical address 60660 is: 0
+address: 0000000000100111, index: 0000000000000000, offset: 0000000000100111
+frame_index: 51, frame_base_location: 13056
+content at logical address 39 is: 9
+address: 0000000101001000, index: 0000000000000001, offset: 0000000001001000
+TLB HIT
+frame_index: 38, frame_base_location: 9728
+content at logical address 328 is: 0
+address: 1011101011111100, index: 0000000010111010, offset: 0000000011111100
+content at logical address 47868 is: 0
+address: 0011001011010001, index: 0000000000110010, offset: 0000000011010001
+frame_index: 52, frame_base_location: 13312
+content at logical address 13009 is: 0
+address: 0101011101101010, index: 0000000001010111, offset: 0000000001101010
+content at logical address 22378 is: 21
+address: 1001100110001000, index: 0000000010011001, offset: 0000000010001000
+content at logical address 39304 is: 0
+address: 0010101110100011, index: 0000000000101011, offset: 0000000010100011
+frame_index: 53, frame_base_location: 13568
+content at logical address 11171 is: -24
+address: 0001111110001111, index: 0000000000011111, offset: 0000000010001111
+frame_index: 54, frame_base_location: 13824
+content at logical address 8079 is: -29
+address: 1100111010001111, index: 0000000011001110, offset: 0000000010001111
+TLB HIT
+frame_index: 76, frame_base_location: 19456
+content at logical address 52879 is: -93
+address: 0001010000000011, index: 0000000000010100, offset: 0000000000000011
+frame_index: 55, frame_base_location: 14080
+content at logical address 5123 is: 0
+address: 0001000100000100, index: 0000000000010001, offset: 0000000000000100
+frame_index: 56, frame_base_location: 14336
+content at logical address 4356 is: 0
+address: 1011001010110001, index: 0000000010110010, offset: 0000000010110001
+content at logical address 45745 is: 0
+address: 1000000010111000, index: 0000000010000000, offset: 0000000010111000
+TLB HIT
+frame_index: 44, frame_base_location: 11264
+content at logical address 32952 is: 0
+address: 0001001000110001, index: 0000000000010010, offset: 0000000000110001
+frame_index: 57, frame_base_location: 14592
+content at logical address 4657 is: 0
+address: 0101111001001110, index: 0000000001011110, offset: 0000000001001110
+frame_index: 58, frame_base_location: 14848
+content at logical address 24142 is: 23
+address: 0101101100010111, index: 0000000001011011, offset: 0000000000010111
+frame_index: 59, frame_base_location: 15104
+content at logical address 23319 is: -59
+address: 0011010100100111, index: 0000000000110101, offset: 0000000000100111
+content at logical address 13607 is: 73
+address: 1011010011100000, index: 0000000010110100, offset: 0000000011100000
+content at logical address 46304 is: 0
+address: 0100010100001101, index: 0000000001000101, offset: 0000000000001101
+content at logical address 17677 is: 0
+address: 1110100100101011, index: 0000000011101001, offset: 0000000000101011
+content at logical address 59691 is: 74
+address: 1100011100010111, index: 0000000011000111, offset: 0000000000010111
+frame_index: 60, frame_base_location: 15360
+content at logical address 50967 is: -59
+address: 0001111010001001, index: 0000000000011110, offset: 0000000010001001
+TLB HIT
+frame_index: 46, frame_base_location: 11776
+content at logical address 7817 is: 0
+address: 0010000101100001, index: 0000000000100001, offset: 0000000001100001
+content at logical address 8545 is: 0
+address: 1101100000000001, index: 0000000011011000, offset: 0000000000000001
+TLB HIT
+frame_index: 47, frame_base_location: 12032
+content at logical address 55297 is: 0
+address: 1100111011011010, index: 0000000011001110, offset: 0000000011011010
+TLB HIT
+frame_index: 76, frame_base_location: 19456
+content at logical address 52954 is: 51
+address: 1001101100101000, index: 0000000010011011, offset: 0000000000101000
+frame_index: 61, frame_base_location: 15616
+content at logical address 39720 is: 0
+address: 0100100000010111, index: 0000000001001000, offset: 0000000000010111
+content at logical address 18455 is: 5
+address: 0111011010001101, index: 0000000001110110, offset: 0000000010001101
+frame_index: 62, frame_base_location: 15872
+content at logical address 30349 is: 0
+address: 1111011100100110, index: 0000000011110111, offset: 0000000000100110
+content at logical address 63270 is: 61
+address: 0110101000010100, index: 0000000001101010, offset: 0000000000010100
+frame_index: 63, frame_base_location: 16128
+content at logical address 27156 is: 0
+address: 0101000010000110, index: 0000000001010000, offset: 0000000010000110
+content at logical address 20614 is: 20
+address: 0100101110101100, index: 0000000001001011, offset: 0000000010101100
+frame_index: 64, frame_base_location: 16384
+content at logical address 19372 is: 0
+address: 1011111000110001, index: 0000000010111110, offset: 0000000000110001
+frame_index: 65, frame_base_location: 16640
+content at logical address 48689 is: 0
+address: 1100000011101010, index: 0000000011000000, offset: 0000000011101010
+frame_index: 66, frame_base_location: 16896
+content at logical address 49386 is: 48
+address: 1100010110011000, index: 0000000011000101, offset: 0000000010011000
+frame_index: 67, frame_base_location: 17152
+content at logical address 50584 is: 0
+address: 1100101011100000, index: 0000000011001010, offset: 0000000011100000
+frame_index: 68, frame_base_location: 17408
+content at logical address 51936 is: 0
+address: 1000011110010001, index: 0000000010000111, offset: 0000000010010001
+content at logical address 34705 is: 0
+address: 0011010101010101, index: 0000000000110101, offset: 0000000001010101
+TLB HIT
+frame_index: 119, frame_base_location: 30464
+content at logical address 13653 is: 0
+address: 1100001110011101, index: 0000000011000011, offset: 0000000010011101
+frame_index: 69, frame_base_location: 17664
+content at logical address 50077 is: 0
+address: 1101010011110110, index: 0000000011010100, offset: 0000000011110110
+frame_index: 70, frame_base_location: 17920
+content at logical address 54518 is: 53
+address: 1010001000001010, index: 0000000010100010, offset: 0000000000001010
+frame_index: 71, frame_base_location: 18176
+content at logical address 41482 is: 40
+address: 0001000001001001, index: 0000000000010000, offset: 0000000001001001
+content at logical address 4169 is: 0
+address: 1000110100010110, index: 0000000010001101, offset: 0000000000010110
+content at logical address 36118 is: 35
+address: 0010010101110000, index: 0000000000100101, offset: 0000000001110000
+frame_index: 72, frame_base_location: 18432
+content at logical address 9584 is: 0
+address: 0100100000111010, index: 0000000001001000, offset: 0000000000111010
+TLB HIT
+frame_index: 95, frame_base_location: 24320
+content at logical address 18490 is: 18
+address: 1101100001111100, index: 0000000011011000, offset: 0000000001111100
+content at logical address 55420 is: 0
+address: 0001011001001100, index: 0000000000010110, offset: 0000000001001100
+content at logical address 5708 is: 0
+address: 0101101111010010, index: 0000000001011011, offset: 0000000011010010
+TLB HIT
+frame_index: 59, frame_base_location: 15104
+content at logical address 23506 is: 22
+address: 0011110000011111, index: 0000000000111100, offset: 0000000000011111
+content at logical address 15391 is: 7
+address: 1000111000010000, index: 0000000010001110, offset: 0000000000010000
+frame_index: 73, frame_base_location: 18688
+content at logical address 36368 is: 0
+address: 1001100001000000, index: 0000000010011000, offset: 0000000001000000
+frame_index: 74, frame_base_location: 18944
+content at logical address 38976 is: 0
+address: 1100010011100110, index: 0000000011000100, offset: 0000000011100110
+frame_index: 75, frame_base_location: 19200
+content at logical address 50406 is: 49
+address: 1100000001010100, index: 0000000011000000, offset: 0000000001010100
+TLB HIT
+frame_index: 66, frame_base_location: 16896
+content at logical address 49236 is: 0
+address: 1111111000001011, index: 0000000011111110, offset: 0000000000001011
+content at logical address 65035 is: -126
+address: 0111010110101000, index: 0000000001110101, offset: 0000000010101000
+frame_index: 76, frame_base_location: 19456
+content at logical address 30120 is: 0
+address: 1111010001010111, index: 0000000011110100, offset: 0000000001010111
+content at logical address 62551 is: 21
+address: 1011011011011001, index: 0000000010110110, offset: 0000000011011001
+content at logical address 46809 is: 0
+address: 0101010010110111, index: 0000000001010100, offset: 0000000010110111
+content at logical address 21687 is: 45
+address: 1101001001001111, index: 0000000011010010, offset: 0000000001001111
+content at logical address 53839 is: -109
+address: 0000100000110010, index: 0000000000001000, offset: 0000000000110010
+frame_index: 77, frame_base_location: 19712
+content at logical address 2098 is: 2
+address: 0011000001001100, index: 0000000000110000, offset: 0000000001001100
+frame_index: 78, frame_base_location: 19968
+content at logical address 12364 is: 0
+address: 1011000100110110, index: 0000000010110001, offset: 0000000000110110
+frame_index: 79, frame_base_location: 20224
+content at logical address 45366 is: 44
+address: 1100010100000101, index: 0000000011000101, offset: 0000000000000101
+TLB HIT
+frame_index: 67, frame_base_location: 17152
+content at logical address 50437 is: 0
+address: 1000111101000011, index: 0000000010001111, offset: 0000000001000011
+frame_index: 80, frame_base_location: 20480
+content at logical address 36675 is: -48
+address: 1101100001010110, index: 0000000011011000, offset: 0000000001010110
+TLB HIT
+frame_index: 47, frame_base_location: 12032
+content at logical address 55382 is: 54
+address: 0010111001000110, index: 0000000000101110, offset: 0000000001000110
+frame_index: 81, frame_base_location: 20736
+content at logical address 11846 is: 11
+address: 1011111111100111, index: 0000000010111111, offset: 0000000011100111
+content at logical address 49127 is: -7
+address: 0100110110111100, index: 0000000001001101, offset: 0000000010111100
+content at logical address 19900 is: 0
+address: 0101000001001010, index: 0000000001010000, offset: 0000000001001010
+TLB HIT
+frame_index: 37, frame_base_location: 9472
+content at logical address 20554 is: 20
+address: 0100101100010011, index: 0000000001001011, offset: 0000000000010011
+TLB HIT
+frame_index: 64, frame_base_location: 16384
+content at logical address 19219 is: -60
+address: 1100100100011011, index: 0000000011001001, offset: 0000000000011011
+frame_index: 82, frame_base_location: 20992
+content at logical address 51483 is: 70
+address: 1110001011101010, index: 0000000011100010, offset: 0000000011101010
+frame_index: 83, frame_base_location: 21248
+content at logical address 58090 is: 56
+address: 1001100010100010, index: 0000000010011000, offset: 0000000010100010
+TLB HIT
+frame_index: 74, frame_base_location: 18944
+content at logical address 39074 is: 38
+address: 0011111010111100, index: 0000000000111110, offset: 0000000010111100
+content at logical address 16060 is: 0
+address: 0010100011001111, index: 0000000000101000, offset: 0000000011001111
+frame_index: 84, frame_base_location: 21504
+content at logical address 10447 is: 51
+address: 1101001110011001, index: 0000000011010011, offset: 0000000010011001
+content at logical address 54169 is: 0
+address: 0101000010011010, index: 0000000001010000, offset: 0000000010011010
+content at logical address 20634 is: 20
+address: 1110000011010011, index: 0000000011100000, offset: 0000000011010011
+frame_index: 85, frame_base_location: 21760
+content at logical address 57555 is: 52
+address: 1110111100011010, index: 0000000011101111, offset: 0000000000011010
+frame_index: 86, frame_base_location: 22016
+content at logical address 61210 is: 59
+address: 0000000100001101, index: 0000000000000001, offset: 0000000000001101
+content at logical address 269 is: 0
+address: 1000000110000010, index: 0000000010000001, offset: 0000000010000010
+content at logical address 33154 is: 32
+address: 1111101111100111, index: 0000000011111011, offset: 0000000011100111
+frame_index: 87, frame_base_location: 22272
+content at logical address 64487 is: -7
+address: 1110111100100111, index: 0000000011101111, offset: 0000000000100111
+TLB HIT
+frame_index: 86, frame_base_location: 22016
+content at logical address 61223 is: -55
+address: 1011100010111100, index: 0000000010111000, offset: 0000000010111100
+content at logical address 47292 is: 0
+address: 0101010101011100, index: 0000000001010101, offset: 0000000001011100
+frame_index: 88, frame_base_location: 22528
+content at logical address 21852 is: 0
+address: 0001010010100001, index: 0000000000010100, offset: 0000000010100001
+content at logical address 5281 is: 0
+address: 1011001101011000, index: 0000000010110011, offset: 0000000001011000
+content at logical address 45912 is: 0
+address: 0111111100010100, index: 0000000001111111, offset: 0000000000010100
+content at logical address 32532 is: 0
+address: 1111011001011011, index: 0000000011110110, offset: 0000000001011011
+frame_index: 89, frame_base_location: 22784
+content at logical address 63067 is: -106
+address: 1010001011010011, index: 0000000010100010, offset: 0000000011010011
+content at logical address 41683 is: -76
+address: 0101000111110101, index: 0000000001010001, offset: 0000000011110101
+frame_index: 90, frame_base_location: 23040
+content at logical address 20981 is: 0
+address: 1000010001011001, index: 0000000010000100, offset: 0000000001011001
+frame_index: 91, frame_base_location: 23296
+content at logical address 33881 is: 0
+address: 1010001100111001, index: 0000000010100011, offset: 0000000000111001
+frame_index: 92, frame_base_location: 23552
+content at logical address 41785 is: 0
+address: 0001000111100100, index: 0000000000010001, offset: 0000000011100100
+content at logical address 4580 is: 0
+address: 1010000110101101, index: 0000000010100001, offset: 0000000010101101
+frame_index: 93, frame_base_location: 23808
+content at logical address 41389 is: 0
+address: 0110111110011100, index: 0000000001101111, offset: 0000000010011100
+content at logical address 28572 is: 0
+address: 0000001100001110, index: 0000000000000011, offset: 0000000000001110
+frame_index: 94, frame_base_location: 24064
+content at logical address 782 is: 0
+address: 0111011001000001, index: 0000000001110110, offset: 0000000001000001
+content at logical address 30273 is: 0
+address: 1111001100111011, index: 0000000011110011, offset: 0000000000111011
+content at logical address 62267 is: -50
+address: 0100011000000010, index: 0000000001000110, offset: 0000000000000010
+content at logical address 17922 is: 17
+address: 1111011100000110, index: 0000000011110111, offset: 0000000000000110
+content at logical address 63238 is: 61
+address: 0000110011101100, index: 0000000000001100, offset: 0000000011101100
+content at logical address 3308 is: 0
+address: 0110011110110001, index: 0000000001100111, offset: 0000000010110001
+content at logical address 26545 is: 0
+address: 1010110101101011, index: 0000000010101101, offset: 0000000001101011
+frame_index: 95, frame_base_location: 24320
+content at logical address 44395 is: 90
+address: 1001100011010000, index: 0000000010011000, offset: 0000000011010000
+content at logical address 39120 is: 0
+address: 0101010011001010, index: 0000000001010100, offset: 0000000011001010
+content at logical address 21706 is: 21
+address: 0001101111101000, index: 0000000000011011, offset: 0000000011101000
+frame_index: 96, frame_base_location: 24576
+content at logical address 7144 is: 0
+address: 0111011000100100, index: 0000000001110110, offset: 0000000000100100
+TLB HIT
+frame_index: 62, frame_base_location: 15872
+content at logical address 30244 is: 0
+address: 0000111010001101, index: 0000000000001110, offset: 0000000010001101
+frame_index: 97, frame_base_location: 24832
+content at logical address 3725 is: 0
+address: 1101010101101000, index: 0000000011010101, offset: 0000000001101000
+frame_index: 98, frame_base_location: 25088
+content at logical address 54632 is: 0
+address: 0111011101101110, index: 0000000001110111, offset: 0000000001101110
+frame_index: 99, frame_base_location: 25344
+content at logical address 30574 is: 29
+address: 0010000100011001, index: 0000000000100001, offset: 0000000000011001
+frame_index: 100, frame_base_location: 25600
+content at logical address 8473 is: 0
+address: 0011000001100010, index: 0000000000110000, offset: 0000000001100010
+content at logical address 12386 is: 12
+address: 1010000010011010, index: 0000000010100000, offset: 0000000010011010
+content at logical address 41114 is: 40
+address: 1110001001001010, index: 0000000011100010, offset: 0000000001001010
+content at logical address 57930 is: 56
+address: 0011101111101101, index: 0000000000111011, offset: 0000000011101101
+content at logical address 15341 is: 0
+address: 0011110011101110, index: 0000000000111100, offset: 0000000011101110
+content at logical address 15598 is: 15
+address: 1110101000010010, index: 0000000011101010, offset: 0000000000010010
+frame_index: 101, frame_base_location: 25856
+content at logical address 59922 is: 58
+address: 0100011100110010, index: 0000000001000111, offset: 0000000000110010
+frame_index: 102, frame_base_location: 26112
+content at logical address 18226 is: 17
+address: 1011110000100010, index: 0000000010111100, offset: 0000000000100010
+frame_index: 103, frame_base_location: 26368
+content at logical address 48162 is: 47
+address: 1010000100100010, index: 0000000010100001, offset: 0000000000100010
+TLB HIT
+frame_index: 93, frame_base_location: 23808
+content at logical address 41250 is: 40
+address: 0000010111101000, index: 0000000000000101, offset: 0000000011101000
+content at logical address 1512 is: 0
+address: 0000100111110010, index: 0000000000001001, offset: 0000000011110010
+content at logical address 2546 is: 2
+address: 1010001011010010, index: 0000000010100010, offset: 0000000011010010
+TLB HIT
+frame_index: 71, frame_base_location: 18176
+content at logical address 41682 is: 40
+address: 0000000101000010, index: 0000000000000001, offset: 0000000001000010
+content at logical address 322 is: 0
+address: 0000001101110000, index: 0000000000000011, offset: 0000000001110000
+TLB HIT
+frame_index: 94, frame_base_location: 24064
+content at logical address 880 is: 0
+address: 0101000110011011, index: 0000000001010001, offset: 0000000010011011
+TLB HIT
+frame_index: 90, frame_base_location: 23040
+content at logical address 20891 is: 102
+address: 1101110100011100, index: 0000000011011101, offset: 0000000000011100
+frame_index: 104, frame_base_location: 26624
+content at logical address 56604 is: 0
+address: 1001110011100110, index: 0000000010011100, offset: 0000000011100110
+frame_index: 105, frame_base_location: 26880
+content at logical address 40166 is: 39
+address: 0110100010100111, index: 0000000001101000, offset: 0000000010100111
+frame_index: 106, frame_base_location: 27136
+content at logical address 26791 is: 41
+address: 1010111000010000, index: 0000000010101110, offset: 0000000000010000
+frame_index: 107, frame_base_location: 27392
+content at logical address 44560 is: 0
+address: 1001011100101010, index: 0000000010010111, offset: 0000000000101010
+frame_index: 108, frame_base_location: 27648
+content at logical address 38698 is: 37
+address: 1111101001111111, index: 0000000011111010, offset: 0000000001111111
+frame_index: 109, frame_base_location: 27904
+content at logical address 64127 is: -97
+address: 0011101010110100, index: 0000000000111010, offset: 0000000010110100
+frame_index: 110, frame_base_location: 28160
+content at logical address 15028 is: 0
+address: 1001011100001101, index: 0000000010010111, offset: 0000000000001101
+TLB HIT
+frame_index: 108, frame_base_location: 27648
+content at logical address 38669 is: 0
+address: 1011001001000101, index: 0000000010110010, offset: 0000000001000101
+frame_index: 111, frame_base_location: 28416
+content at logical address 45637 is: 0
+address: 1010100010001111, index: 0000000010101000, offset: 0000000010001111
+content at logical address 43151 is: 35
+address: 0010010011111001, index: 0000000000100100, offset: 0000000011111001
+content at logical address 9465 is: 0
+address: 0000100111000010, index: 0000000000001001, offset: 0000000011000010
+TLB HIT
+frame_index: 31, frame_base_location: 7936
+content at logical address 2498 is: 2
+address: 0011011010011010, index: 0000000000110110, offset: 0000000010011010
+frame_index: 112, frame_base_location: 28672
+content at logical address 13978 is: 13
+address: 0011111111000110, index: 0000000000111111, offset: 0000000011000110
+content at logical address 16326 is: 15
+address: 1100100011110010, index: 0000000011001000, offset: 0000000011110010
+content at logical address 51442 is: 50
+address: 1000100000011101, index: 0000000010001000, offset: 0000000000011101
+content at logical address 34845 is: 0
+address: 1111100010110011, index: 0000000011111000, offset: 0000000010110011
+frame_index: 113, frame_base_location: 28928
+content at logical address 63667 is: 44
+address: 1001100111001010, index: 0000000010011001, offset: 0000000011001010
+content at logical address 39370 is: 38
+address: 1101100101110111, index: 0000000011011001, offset: 0000000001110111
+frame_index: 114, frame_base_location: 29184
+content at logical address 55671 is: 93
+address: 1111101111110000, index: 0000000011111011, offset: 0000000011110000
+content at logical address 64496 is: 0
+address: 0001111001010111, index: 0000000000011110, offset: 0000000001010111
+content at logical address 7767 is: -107
+address: 0001100010001011, index: 0000000000011000, offset: 0000000010001011
+frame_index: 115, frame_base_location: 29440
+content at logical address 6283 is: 34
+address: 1101101001001100, index: 0000000011011010, offset: 0000000001001100
+frame_index: 116, frame_base_location: 29696
+content at logical address 55884 is: 0
+address: 1110111010101111, index: 0000000011101110, offset: 0000000010101111
+frame_index: 117, frame_base_location: 29952
+content at logical address 61103 is: -85
+address: 0010011111001000, index: 0000000000100111, offset: 0000000011001000
+frame_index: 118, frame_base_location: 30208
+content at logical address 10184 is: 0
+address: 1001101001110111, index: 0000000010011010, offset: 0000000001110111
+frame_index: 119, frame_base_location: 30464
+content at logical address 39543 is: -99
+address: 0010010101010011, index: 0000000000100101, offset: 0000000001010011
+content at logical address 9555 is: 84
+address: 0011011010001011, index: 0000000000110110, offset: 0000000010001011
+TLB HIT
+frame_index: 112, frame_base_location: 28672
+content at logical address 13963 is: -94
+address: 1110011001011111, index: 0000000011100110, offset: 0000000001011111
+frame_index: 120, frame_base_location: 30720
+content at logical address 58975 is: -105
+address: 0100110001010001, index: 0000000001001100, offset: 0000000001010001
+frame_index: 121, frame_base_location: 30976
+content at logical address 19537 is: 0
+address: 0001011111010101, index: 0000000000010111, offset: 0000000011010101
+content at logical address 6101 is: 0
+address: 1010000111001101, index: 0000000010100001, offset: 0000000011001101
+content at logical address 41421 is: 0
+address: 1011000110111110, index: 0000000010110001, offset: 0000000010111110
+content at logical address 45502 is: 44
+address: 0111001010010000, index: 0000000001110010, offset: 0000000010010000
+frame_index: 122, frame_base_location: 31232
+content at logical address 29328 is: 0
+address: 0001111111010101, index: 0000000000011111, offset: 0000000011010101
+content at logical address 8149 is: 0
+address: 0110001101101010, index: 0000000001100011, offset: 0000000001101010
+frame_index: 123, frame_base_location: 31488
+content at logical address 25450 is: 24
+address: 1110011001000000, index: 0000000011100110, offset: 0000000001000000
+TLB HIT
+frame_index: 120, frame_base_location: 30720
+content at logical address 58944 is: 0
+address: 1100010111101010, index: 0000000011000101, offset: 0000000011101010
+content at logical address 50666 is: 49
+address: 0101101000101100, index: 0000000001011010, offset: 0000000000101100
+content at logical address 23084 is: 0
+address: 1000111001110100, index: 0000000010001110, offset: 0000000001110100
+content at logical address 36468 is: 0
+address: 1000001101101101, index: 0000000010000011, offset: 0000000001101101
+frame_index: 124, frame_base_location: 31744
+content at logical address 33645 is: 0
+address: 0110000110101010, index: 0000000001100001, offset: 0000000010101010
+frame_index: 125, frame_base_location: 32000
+content at logical address 25002 is: 24
+address: 1101000111010011, index: 0000000011010001, offset: 0000000011010011
+frame_index: 126, frame_base_location: 32256
+content at logical address 53715 is: 116
+address: 1110101100001101, index: 0000000011101011, offset: 0000000000001101
+content at logical address 60173 is: 0
+address: 1011010100010010, index: 0000000010110101, offset: 0000000000010010
+frame_index: 127, frame_base_location: 32512
+content at logical address 46354 is: 45
+address: 0001001001100100, index: 0000000000010010, offset: 0000000001100100
+content at logical address 4708 is: 0
+address: 0110111000110000, index: 0000000001101110, offset: 0000000000110000
+content at logical address 28208 is: 0
+address: 1110010111011100, index: 0000000011100101, offset: 0000000011011100
+content at logical address 58844 is: 0
+address: 0101011010011101, index: 0000000001010110, offset: 0000000010011101
+content at logical address 22173 is: 0
+address: 0010000101010111, index: 0000000000100001, offset: 0000000001010111
+content at logical address 8535 is: 85
+address: 1010010100010101, index: 0000000010100101, offset: 0000000000010101
+frame_index: 0, frame_base_location: 0
+content at logical address 42261 is: 0
+address: 0111001111110111, index: 0000000001110011, offset: 0000000011110111
+frame_index: 1, frame_base_location: 256
+content at logical address 29687 is: -3
+address: 1001001110100111, index: 0000000010010011, offset: 0000000010100111
+frame_index: 2, frame_base_location: 512
+content at logical address 37799 is: -23
+address: 0101100000100110, index: 0000000001011000, offset: 0000000000100110
+frame_index: 3, frame_base_location: 768
+content at logical address 22566 is: 22
+address: 1111010000111000, index: 0000000011110100, offset: 0000000000111000
+content at logical address 62520 is: 0
+address: 0001000000000010, index: 0000000000010000, offset: 0000000000000010
+frame_index: 4, frame_base_location: 1024
+content at logical address 4098 is: 4
+address: 1011101101111111, index: 0000000010111011, offset: 0000000001111111
+content at logical address 47999 is: -33
+address: 1100000111111100, index: 0000000011000001, offset: 0000000011111100
+frame_index: 5, frame_base_location: 1280
+content at logical address 49660 is: 0
+address: 1001000011000111, index: 0000000010010000, offset: 0000000011000111
+content at logical address 37063 is: 49
+address: 1010001110000000, index: 0000000010100011, offset: 0000000010000000
+content at logical address 41856 is: 0
+address: 0001010100101001, index: 0000000000010101, offset: 0000000000101001
+frame_index: 6, frame_base_location: 1536
+content at logical address 5417 is: 0
+address: 1011111011011000, index: 0000000010111110, offset: 0000000011011000
+content at logical address 48856 is: 0
+address: 0010100110111010, index: 0000000000101001, offset: 0000000010111010
+frame_index: 7, frame_base_location: 1792
+content at logical address 10682 is: 10
+address: 0101011101100010, index: 0000000001010111, offset: 0000000001100010
+content at logical address 22370 is: 21
+address: 1111011100110001, index: 0000000011110111, offset: 0000000000110001
+content at logical address 63281 is: 0
+address: 1111001111110100, index: 0000000011110011, offset: 0000000011110100
+frame_index: 8, frame_base_location: 2048
+content at logical address 62452 is: 0
+address: 1100010101100100, index: 0000000011000101, offset: 0000000001100100
+TLB HIT
+frame_index: 67, frame_base_location: 17152
+content at logical address 50532 is: 0
+address: 0010001100111110, index: 0000000000100011, offset: 0000000000111110
+frame_index: 9, frame_base_location: 2304
+content at logical address 9022 is: 8
+address: 1110011110100100, index: 0000000011100111, offset: 0000000010100100
+frame_index: 10, frame_base_location: 2560
+content at logical address 59300 is: 0
+address: 1110010100100100, index: 0000000011100101, offset: 0000000000100100
+TLB HIT
+frame_index: 11, frame_base_location: 2816
+content at logical address 58660 is: 0
+address: 1101110001010001, index: 0000000011011100, offset: 0000000001010001
+frame_index: 11, frame_base_location: 2816
+content at logical address 56401 is: 0
+address: 0010000101000110, index: 0000000000100001, offset: 0000000001000110
+TLB HIT
+frame_index: 100, frame_base_location: 25600
+content at logical address 8518 is: 8
+address: 1111011001011010, index: 0000000011110110, offset: 0000000001011010
+content at logical address 63066 is: 61
+address: 1111011100010010, index: 0000000011110111, offset: 0000000000010010
+TLB HIT
+frame_index: 40, frame_base_location: 10240
+content at logical address 63250 is: 61
+address: 1011110111010000, index: 0000000010111101, offset: 0000000011010000
+frame_index: 12, frame_base_location: 3072
+content at logical address 48592 is: 0
+address: 0111000001100011, index: 0000000001110000, offset: 0000000001100011
+frame_index: 13, frame_base_location: 3328
+content at logical address 28771 is: 24
+address: 1001001100101001, index: 0000000010010011, offset: 0000000000101001
+TLB HIT
+frame_index: 2, frame_base_location: 512
+content at logical address 37673 is: 0
+address: 1110110101101000, index: 0000000011101101, offset: 0000000001101000
+frame_index: 14, frame_base_location: 3584
+content at logical address 60776 is: 0
+address: 1101110001110110, index: 0000000011011100, offset: 0000000001110110
+TLB HIT
+frame_index: 11, frame_base_location: 2816
+content at logical address 56438 is: 55
+address: 1110110000001000, index: 0000000011101100, offset: 0000000000001000
+content at logical address 60424 is: 0
+address: 1001110000111001, index: 0000000010011100, offset: 0000000000111001
+content at logical address 39993 is: 0
+address: 1101101011000100, index: 0000000011011010, offset: 0000000011000100
+content at logical address 56004 is: 0
+address: 1110011001111010, index: 0000000011100110, offset: 0000000001111010
+content at logical address 59002 is: 57
+address: 1000010010111110, index: 0000000010000100, offset: 0000000010111110
+content at logical address 33982 is: 33
+address: 0110001110011010, index: 0000000001100011, offset: 0000000010011010
+content at logical address 25498 is: 24
+address: 1101111011010111, index: 0000000011011110, offset: 0000000011010111
+frame_index: 15, frame_base_location: 3840
+content at logical address 57047 is: -75
+address: 0000010101111001, index: 0000000000000101, offset: 0000000001111001
+frame_index: 16, frame_base_location: 4096
+content at logical address 1401 is: 0
+address: 0011101100011010, index: 0000000000111011, offset: 0000000000011010
+content at logical address 15130 is: 14
+address: 1010011111010000, index: 0000000010100111, offset: 0000000011010000
+frame_index: 17, frame_base_location: 4352
+content at logical address 42960 is: 0
+address: 1111000110000011, index: 0000000011110001, offset: 0000000010000011
+frame_index: 18, frame_base_location: 4608
+content at logical address 61827 is: 96
+address: 0111111010111010, index: 0000000001111110, offset: 0000000010111010
+frame_index: 19, frame_base_location: 4864
+content at logical address 32442 is: 31
+address: 1111101100110000, index: 0000000011111011, offset: 0000000000110000
+content at logical address 64304 is: 0
+address: 0111011001000001, index: 0000000001110110, offset: 0000000001000001
+content at logical address 30273 is: 0
+address: 1001010011000010, index: 0000000010010100, offset: 0000000011000010
+frame_index: 20, frame_base_location: 5120
+content at logical address 38082 is: 37
+address: 0101011110000100, index: 0000000001010111, offset: 0000000010000100
+TLB HIT
+frame_index: 34, frame_base_location: 8704
+content at logical address 22404 is: 0
+address: 0000111011100000, index: 0000000000001110, offset: 0000000011100000
+content at logical address 3808 is: 0
+address: 0100000111110011, index: 0000000001000001, offset: 0000000011110011
+frame_index: 21, frame_base_location: 5376
+content at logical address 16883 is: 124
+address: 0101101001000111, index: 0000000001011010, offset: 0000000001000111
+content at logical address 23111 is: -111
+address: 1111001111010001, index: 0000000011110011, offset: 0000000011010001
+TLB HIT
+frame_index: 8, frame_base_location: 2048
+content at logical address 62417 is: 0
+address: 1110101111001100, index: 0000000011101011, offset: 0000000011001100
+content at logical address 60364 is: 0
+address: 0001000110111110, index: 0000000000010001, offset: 0000000010111110
+content at logical address 4542 is: 4
+address: 0011100111101101, index: 0000000000111001, offset: 0000000011101101
+frame_index: 22, frame_base_location: 5632
+content at logical address 14829 is: 0
+address: 1010111110100100, index: 0000000010101111, offset: 0000000010100100
+frame_index: 23, frame_base_location: 5888
+content at logical address 44964 is: 0
+address: 1000010010000100, index: 0000000010000100, offset: 0000000010000100
+TLB HIT
+frame_index: 91, frame_base_location: 23296
+content at logical address 33924 is: 0
+address: 0000100001011101, index: 0000000000001000, offset: 0000000001011101
+content at logical address 2141 is: 0
+address: 0100101100101101, index: 0000000001001011, offset: 0000000000101101
+content at logical address 19245 is: 0
+address: 1011100001000000, index: 0000000010111000, offset: 0000000001000000
+content at logical address 47168 is: 0
+address: 0101110111110000, index: 0000000001011101, offset: 0000000011110000
+frame_index: 24, frame_base_location: 6144
+content at logical address 24048 is: 0
+address: 0000001111111110, index: 0000000000000011, offset: 0000000011111110
+content at logical address 1022 is: 0
+address: 0101101000100011, index: 0000000001011010, offset: 0000000000100011
+TLB HIT
+frame_index: 36, frame_base_location: 9216
+content at logical address 23075 is: -120
+address: 0110000100111000, index: 0000000001100001, offset: 0000000000111000
+content at logical address 24888 is: 0
+address: 1100000001011111, index: 0000000011000000, offset: 0000000001011111
+content at logical address 49247 is: 23
+address: 0001001100100100, index: 0000000000010011, offset: 0000000000100100
+frame_index: 25, frame_base_location: 6400
+content at logical address 4900 is: 0
+address: 0101100010000000, index: 0000000001011000, offset: 0000000010000000
+content at logical address 22656 is: 0
+address: 1000010101000101, index: 0000000010000101, offset: 0000000001000101
+frame_index: 26, frame_base_location: 6656
+content at logical address 34117 is: 0
+address: 1101100100000011, index: 0000000011011001, offset: 0000000000000011
+content at logical address 55555 is: 64
+address: 1011111100110011, index: 0000000010111111, offset: 0000000000110011
+frame_index: 27, frame_base_location: 6912
+content at logical address 48947 is: -52
+address: 1110100010001101, index: 0000000011101000, offset: 0000000010001101
+frame_index: 28, frame_base_location: 7168
+content at logical address 59533 is: 0
+address: 0101001101000000, index: 0000000001010011, offset: 0000000001000000
+frame_index: 29, frame_base_location: 7424
+content at logical address 21312 is: 0
+address: 0101001110100111, index: 0000000001010011, offset: 0000000010100111
+TLB HIT
+frame_index: 29, frame_base_location: 7424
+content at logical address 21415 is: -23
+address: 0000001100101101, index: 0000000000000011, offset: 0000000000101101
+TLB HIT
+frame_index: 94, frame_base_location: 24064
+content at logical address 813 is: 0
+address: 0100101111011011, index: 0000000001001011, offset: 0000000011011011
+TLB HIT
+frame_index: 64, frame_base_location: 16384
+content at logical address 19419 is: -10
+address: 0000011111001111, index: 0000000000000111, offset: 0000000011001111
+content at logical address 1999 is: -13
+address: 0100111010111011, index: 0000000001001110, offset: 0000000010111011
+frame_index: 30, frame_base_location: 7680
+content at logical address 20155 is: -82
+address: 0101010000010001, index: 0000000001010100, offset: 0000000000010001
+frame_index: 31, frame_base_location: 7936
+content at logical address 21521 is: 0
+address: 0011010101100110, index: 0000000000110101, offset: 0000000001100110
+frame_index: 32, frame_base_location: 8192
+content at logical address 13670 is: 13
+address: 0100101101011001, index: 0000000001001011, offset: 0000000001011001
+TLB HIT
+frame_index: 64, frame_base_location: 16384
+content at logical address 19289 is: 0
+address: 1110010001110011, index: 0000000011100100, offset: 0000000001110011
+frame_index: 33, frame_base_location: 8448
+content at logical address 58483 is: 28
+address: 1010000101100110, index: 0000000010100001, offset: 0000000001100110
+content at logical address 41318 is: 40
+address: 0011111100010111, index: 0000000000111111, offset: 0000000000010111
+frame_index: 34, frame_base_location: 8704
+content at logical address 16151 is: -59
+address: 0011010100101011, index: 0000000000110101, offset: 0000000000101011
+TLB HIT
+frame_index: 32, frame_base_location: 8192
+content at logical address 13611 is: 74
+address: 0101010000001010, index: 0000000001010100, offset: 0000000000001010
+TLB HIT
+frame_index: 31, frame_base_location: 7936
+content at logical address 21514 is: 21
+address: 0011010010111011, index: 0000000000110100, offset: 0000000010111011
+frame_index: 35, frame_base_location: 8960
+content at logical address 13499 is: 46
+address: 1011001000001111, index: 0000000010110010, offset: 0000000000001111
+content at logical address 45583 is: -125
+address: 1011111101110101, index: 0000000010111111, offset: 0000000001110101
+TLB HIT
+frame_index: 27, frame_base_location: 6912
+content at logical address 49013 is: 0
+address: 1111110101001011, index: 0000000011111101, offset: 0000000001001011
+frame_index: 36, frame_base_location: 9216
+content at logical address 64843 is: 82
+address: 1111011111111101, index: 0000000011110111, offset: 0000000011111101
+content at logical address 63485 is: 0
+address: 1001011100101001, index: 0000000010010111, offset: 0000000000101001
+content at logical address 38697 is: 0
+address: 1110011100110100, index: 0000000011100111, offset: 0000000000110100
+content at logical address 59188 is: 0
+address: 0110000000010001, index: 0000000001100000, offset: 0000000000010001
+frame_index: 37, frame_base_location: 9472
+content at logical address 24593 is: 0
+address: 1110000100101001, index: 0000000011100001, offset: 0000000000101001
+frame_index: 38, frame_base_location: 9728
+content at logical address 57641 is: 0
+address: 1000111010101100, index: 0000000010001110, offset: 0000000010101100
+content at logical address 36524 is: 0
+address: 1101111010010100, index: 0000000011011110, offset: 0000000010010100
+content at logical address 56980 is: 0
+address: 1000111111001010, index: 0000000010001111, offset: 0000000011001010
+content at logical address 36810 is: 35
+address: 0001011111010000, index: 0000000000010111, offset: 0000000011010000
+frame_index: 39, frame_base_location: 9984
+content at logical address 6096 is: 0
+address: 0010101100111110, index: 0000000000101011, offset: 0000000000111110
+content at logical address 11070 is: 10
+address: 1110101011011100, index: 0000000011101010, offset: 0000000011011100
+content at logical address 60124 is: 0
+address: 1001001011001000, index: 0000000010010010, offset: 0000000011001000
+frame_index: 40, frame_base_location: 10240
+content at logical address 37576 is: 0
+address: 0011101011111000, index: 0000000000111010, offset: 0000000011111000
+content at logical address 15096 is: 0
+address: 1011000010111111, index: 0000000010110000, offset: 0000000010111111
+frame_index: 41, frame_base_location: 10496
+content at logical address 45247 is: 47
+address: 1000000000001111, index: 0000000010000000, offset: 0000000000001111
+content at logical address 32783 is: 3
+address: 1110010000010110, index: 0000000011100100, offset: 0000000000010110
+TLB HIT
+frame_index: 33, frame_base_location: 8448
+content at logical address 58390 is: 57
+address: 1110110111001001, index: 0000000011101101, offset: 0000000011001001
+content at logical address 60873 is: 0
+address: 0101110010100111, index: 0000000001011100, offset: 0000000010100111
+frame_index: 42, frame_base_location: 10752
+content at logical address 23719 is: 41
+address: 0101111101000001, index: 0000000001011111, offset: 0000000001000001
+frame_index: 43, frame_base_location: 11008
+content at logical address 24385 is: 0
+address: 0101011100100011, index: 0000000001010111, offset: 0000000000100011
+frame_index: 44, frame_base_location: 11264
+content at logical address 22307 is: -56
+address: 0100001111011111, index: 0000000001000011, offset: 0000000011011111
+frame_index: 45, frame_base_location: 11520
+content at logical address 17375 is: -9
+address: 0011111001110110, index: 0000000000111110, offset: 0000000001110110
+frame_index: 46, frame_base_location: 11776
+content at logical address 15990 is: 15
+address: 0101000000101110, index: 0000000001010000, offset: 0000000000101110
+frame_index: 47, frame_base_location: 12032
+content at logical address 20526 is: 20
+address: 0110010100110000, index: 0000000001100101, offset: 0000000000110000
+frame_index: 48, frame_base_location: 12288
+content at logical address 25904 is: 0
+address: 1010010011110000, index: 0000000010100100, offset: 0000000011110000
+frame_index: 49, frame_base_location: 12544
+content at logical address 42224 is: 0
+address: 0010010001011111, index: 0000000000100100, offset: 0000000001011111
+frame_index: 50, frame_base_location: 12800
+content at logical address 9311 is: 23
+address: 0001111010110110, index: 0000000000011110, offset: 0000000010110110
+frame_index: 51, frame_base_location: 13056
+content at logical address 7862 is: 7
+address: 0000111011111011, index: 0000000000001110, offset: 0000000011111011
+content at logical address 3835 is: -66
+address: 0111011101000111, index: 0000000001110111, offset: 0000000001000111
+content at logical address 30535 is: -47
+address: 1111111010011011, index: 0000000011111110, offset: 0000000010011011
+frame_index: 52, frame_base_location: 13312
+content at logical address 65179 is: -90
+address: 1110000000101011, index: 0000000011100000, offset: 0000000000101011
+content at logical address 57387 is: 10
+address: 1111100001011011, index: 0000000011111000, offset: 0000000001011011
+content at logical address 63579 is: 22
+address: 0001001101010010, index: 0000000000010011, offset: 0000000001010010
+content at logical address 4946 is: 4
+address: 0010001101001101, index: 0000000000100011, offset: 0000000001001101
+content at logical address 9037 is: 0
+address: 1110111001101001, index: 0000000011101110, offset: 0000000001101001
+content at logical address 61033 is: 0
+address: 1101100011110111, index: 0000000011011000, offset: 0000000011110111
+frame_index: 53, frame_base_location: 13568
+content at logical address 55543 is: 61
+address: 1100010010111001, index: 0000000011000100, offset: 0000000010111001
+content at logical address 50361 is: 0
+address: 0001100101010000, index: 0000000000011001, offset: 0000000001010000
+frame_index: 54, frame_base_location: 13824
+content at logical address 6480 is: 0
+address: 0011011011011010, index: 0000000000110110, offset: 0000000011011010
+content at logical address 14042 is: 13
+address: 0101010000011011, index: 0000000001010100, offset: 0000000000011011
+content at logical address 21531 is: 6
+address: 1001100100011011, index: 0000000010011001, offset: 0000000000011011
+frame_index: 55, frame_base_location: 14080
+content at logical address 39195 is: 70
+address: 1001001010000111, index: 0000000010010010, offset: 0000000010000111
+TLB HIT
+frame_index: 40, frame_base_location: 10240
+content at logical address 37511 is: -95
+address: 0101110010010000, index: 0000000001011100, offset: 0000000010010000
+TLB HIT
+frame_index: 42, frame_base_location: 10752
+content at logical address 23696 is: 0
+address: 0110101100110000, index: 0000000001101011, offset: 0000000000110000
+frame_index: 56, frame_base_location: 14336
+content at logical address 27440 is: 0
+address: 0110111000101001, index: 0000000001101110, offset: 0000000000101001
+frame_index: 57, frame_base_location: 14592
+content at logical address 28201 is: 0
+address: 0101101000100000, index: 0000000001011010, offset: 0000000000100000
+frame_index: 58, frame_base_location: 14848
+content at logical address 23072 is: 0
+address: 0001111010000110, index: 0000000000011110, offset: 0000000010000110
+TLB HIT
+frame_index: 51, frame_base_location: 13056
+content at logical address 7814 is: 7
+address: 0001100110011000, index: 0000000000011001, offset: 0000000010011000
+TLB HIT
+frame_index: 54, frame_base_location: 13824
+content at logical address 6552 is: 0
+address: 1010101001110101, index: 0000000010101010, offset: 0000000001110101
+frame_index: 59, frame_base_location: 15104
+content at logical address 43637 is: 0
+address: 1000100100101001, index: 0000000010001001, offset: 0000000000101001
+frame_index: 60, frame_base_location: 15360
+content at logical address 35113 is: 0
+address: 1000100001001010, index: 0000000010001000, offset: 0000000001001010
+frame_index: 61, frame_base_location: 15616
+content at logical address 34890 is: 34
+address: 1110111101110001, index: 0000000011101111, offset: 0000000001110001
+content at logical address 61297 is: 0
+address: 1011001001000001, index: 0000000010110010, offset: 0000000001000001
+content at logical address 45633 is: 0
+address: 1110111111110111, index: 0000000011101111, offset: 0000000011110111
+TLB HIT
+frame_index: 86, frame_base_location: 22016
+content at logical address 61431 is: -3
+address: 1011001111010000, index: 0000000010110011, offset: 0000000011010000
+frame_index: 62, frame_base_location: 15872
+content at logical address 46032 is: 0
+address: 0100100101010110, index: 0000000001001001, offset: 0000000001010110
+frame_index: 63, frame_base_location: 16128
+content at logical address 18774 is: 18
+address: 1111011000001111, index: 0000000011110110, offset: 0000000000001111
+content at logical address 62991 is: -125
+address: 0110110110011011, index: 0000000001101101, offset: 0000000010011011
+frame_index: 64, frame_base_location: 16384
+content at logical address 28059 is: 102
+address: 1000100110011101, index: 0000000010001001, offset: 0000000010011101
+TLB HIT
+frame_index: 60, frame_base_location: 15360
+content at logical address 35229 is: 0
+address: 1100100000011110, index: 0000000011001000, offset: 0000000000011110
+frame_index: 65, frame_base_location: 16640
+content at logical address 51230 is: 50
+address: 0011100001000101, index: 0000000000111000, offset: 0000000001000101
+frame_index: 66, frame_base_location: 16896
+content at logical address 14405 is: 0
+address: 1100110000010010, index: 0000000011001100, offset: 0000000000010010
+frame_index: 67, frame_base_location: 17152
+content at logical address 52242 is: 51
+address: 1010100010010001, index: 0000000010101000, offset: 0000000010010001
+frame_index: 68, frame_base_location: 17408
+content at logical address 43153 is: 0
+address: 0000101010010101, index: 0000000000001010, offset: 0000000010010101
+frame_index: 69, frame_base_location: 17664
+content at logical address 2709 is: 0
+address: 1011101101011011, index: 0000000010111011, offset: 0000000001011011
+frame_index: 70, frame_base_location: 17920
+content at logical address 47963 is: -42
+address: 1001000001001111, index: 0000000010010000, offset: 0000000001001111
+frame_index: 71, frame_base_location: 18176
+content at logical address 36943 is: 19
+address: 1101001100110010, index: 0000000011010011, offset: 0000000000110010
+frame_index: 72, frame_base_location: 18432
+content at logical address 54066 is: 52
+address: 0010011101000110, index: 0000000000100111, offset: 0000000001000110
+content at logical address 10054 is: 9
+address: 1010100000101011, index: 0000000010101000, offset: 0000000000101011
+TLB HIT
+frame_index: 68, frame_base_location: 17408
+content at logical address 43051 is: 10
+address: 0010110100000101, index: 0000000000101101, offset: 0000000000000101
+frame_index: 73, frame_base_location: 18688
+content at logical address 11525 is: 0
+address: 0100010100010100, index: 0000000001000101, offset: 0000000000010100
+frame_index: 74, frame_base_location: 18944
+content at logical address 17684 is: 0
+address: 1010001011010001, index: 0000000010100010, offset: 0000000011010001
+frame_index: 75, frame_base_location: 19200
+content at logical address 41681 is: 0
+address: 0110110011101011, index: 0000000001101100, offset: 0000000011101011
+frame_index: 76, frame_base_location: 19456
+content at logical address 27883 is: 58
+address: 1101111001001101, index: 0000000011011110, offset: 0000000001001101
+content at logical address 56909 is: 0
+address: 1011001011001100, index: 0000000010110010, offset: 0000000011001100
+TLB HIT
+frame_index: 111, frame_base_location: 28416
+content at logical address 45772 is: 0
+address: 0110101101101000, index: 0000000001101011, offset: 0000000001101000
+TLB HIT
+frame_index: 56, frame_base_location: 14336
+content at logical address 27496 is: 0
+address: 1011011011111010, index: 0000000010110110, offset: 0000000011111010
+frame_index: 77, frame_base_location: 19712
+content at logical address 46842 is: 45
+address: 1001011101001110, index: 0000000010010111, offset: 0000000001001110
+content at logical address 38734 is: 37
+address: 0111000100101100, index: 0000000001110001, offset: 0000000000101100
+frame_index: 78, frame_base_location: 19968
+content at logical address 28972 is: 0
+address: 1110100100100100, index: 0000000011101001, offset: 0000000000100100
+frame_index: 79, frame_base_location: 20224
+content at logical address 59684 is: 0
+address: 0010110001111000, index: 0000000000101100, offset: 0000000001111000
+frame_index: 80, frame_base_location: 20480
+content at logical address 11384 is: 0
+address: 0101001000011010, index: 0000000001010010, offset: 0000000000011010
+frame_index: 81, frame_base_location: 20736
+content at logical address 21018 is: 20
+address: 0000100010010000, index: 0000000000001000, offset: 0000000010010000
+frame_index: 82, frame_base_location: 20992
+content at logical address 2192 is: 0
+address: 0100011111010000, index: 0000000001000111, offset: 0000000011010000
+content at logical address 18384 is: 0
+address: 0011010010011000, index: 0000000000110100, offset: 0000000010011000
+content at logical address 13464 is: 0
+address: 0111100100101010, index: 0000000001111001, offset: 0000000000101010
+frame_index: 83, frame_base_location: 21248
+content at logical address 31018 is: 30
+address: 1111010111101110, index: 0000000011110101, offset: 0000000011101110
+frame_index: 84, frame_base_location: 21504
+content at logical address 62958 is: 61
+address: 0111011110010011, index: 0000000001110111, offset: 0000000010010011
+content at logical address 30611 is: -28
+address: 0000011101111001, index: 0000000000000111, offset: 0000000001111001
+frame_index: 85, frame_base_location: 21760
+content at logical address 1913 is: 0
+address: 0100100111011000, index: 0000000001001001, offset: 0000000011011000
+TLB HIT
+frame_index: 63, frame_base_location: 16128
+content at logical address 18904 is: 0
+address: 0110100010010101, index: 0000000001101000, offset: 0000000010010101
+content at logical address 26773 is: 0
+address: 1101100011000011, index: 0000000011011000, offset: 0000000011000011
+content at logical address 55491 is: 48
+address: 0101010110001011, index: 0000000001010101, offset: 0000000010001011
+content at logical address 21899 is: 98
+address: 1111101110011101, index: 0000000011111011, offset: 0000000010011101
+content at logical address 64413 is: 0
+address: 1011100000011110, index: 0000000010111000, offset: 0000000000011110
+frame_index: 86, frame_base_location: 22016
+content at logical address 47134 is: 46
+address: 0101101010000100, index: 0000000001011010, offset: 0000000010000100
+content at logical address 23172 is: 0
+address: 0001110001011110, index: 0000000000011100, offset: 0000000001011110
+frame_index: 87, frame_base_location: 22272
+content at logical address 7262 is: 7
+address: 0011000110100001, index: 0000000000110001, offset: 0000000010100001
+frame_index: 88, frame_base_location: 22528
+content at logical address 12705 is: 0
+address: 0001110101100010, index: 0000000000011101, offset: 0000000001100010
+frame_index: 89, frame_base_location: 22784
+content at logical address 7522 is: 7
+address: 1110010110111111, index: 0000000011100101, offset: 0000000010111111
+frame_index: 90, frame_base_location: 23040
+content at logical address 58815 is: 111
+address: 1000100001100100, index: 0000000010001000, offset: 0000000001100100
+content at logical address 34916 is: 0
+address: 0000111011011010, index: 0000000000001110, offset: 0000000011011010
+content at logical address 3802 is: 3
+address: 1110001010011000, index: 0000000011100010, offset: 0000000010011000
+frame_index: 91, frame_base_location: 23296
+content at logical address 58008 is: 0
+address: 0000010011010111, index: 0000000000000100, offset: 0000000011010111
+frame_index: 92, frame_base_location: 23552
+content at logical address 1239 is: 53
+address: 1111100111001011, index: 0000000011111001, offset: 0000000011001011
+frame_index: 93, frame_base_location: 23808
+content at logical address 63947 is: 114
+address: 0000000101111101, index: 0000000000000001, offset: 0000000001111101
+frame_index: 94, frame_base_location: 24064
+content at logical address 381 is: 0
+address: 1110110100111110, index: 0000000011101101, offset: 0000000000111110
+content at logical address 60734 is: 59
+address: 1011111010000001, index: 0000000010111110, offset: 0000000010000001
+frame_index: 95, frame_base_location: 24320
+content at logical address 48769 is: 0
+address: 1010001111010010, index: 0000000010100011, offset: 0000000011010010
+frame_index: 96, frame_base_location: 24576
+content at logical address 41938 is: 40
+address: 1001010010001001, index: 0000000010010100, offset: 0000000010001001
+content at logical address 38025 is: 0
+address: 1101011100111011, index: 0000000011010111, offset: 0000000000111011
+frame_index: 97, frame_base_location: 24832
+content at logical address 55099 is: -50
+address: 1101110101110011, index: 0000000011011101, offset: 0000000001110011
+content at logical address 56691 is: 92
+address: 1001101001101010, index: 0000000010011010, offset: 0000000001101010
+content at logical address 39530 is: 38
+address: 1110011001111011, index: 0000000011100110, offset: 0000000001111011
+content at logical address 59003 is: -98
+address: 0001011110001101, index: 0000000000010111, offset: 0000000010001101
+content at logical address 6029 is: 0
+address: 0101000110111000, index: 0000000001010001, offset: 0000000010111000
+frame_index: 98, frame_base_location: 25088
+content at logical address 20920 is: 0
+address: 0001111110001101, index: 0000000000011111, offset: 0000000010001101
+frame_index: 99, frame_base_location: 25344
+content at logical address 8077 is: 0
+address: 1010011010001001, index: 0000000010100110, offset: 0000000010001001
+frame_index: 100, frame_base_location: 25600
+content at logical address 42633 is: 0
+address: 0100010000100011, index: 0000000001000100, offset: 0000000000100011
+frame_index: 101, frame_base_location: 25856
+content at logical address 17443 is: 8
+address: 1101000101000010, index: 0000000011010001, offset: 0000000001000010
+content at logical address 53570 is: 52
+address: 0101100100110001, index: 0000000001011001, offset: 0000000000110001
+frame_index: 102, frame_base_location: 26112
+content at logical address 22833 is: 0
+address: 0000111011000110, index: 0000000000001110, offset: 0000000011000110
+TLB HIT
+frame_index: 97, frame_base_location: 24832
+content at logical address 3782 is: 53
+address: 1011101010001110, index: 0000000010111010, offset: 0000000010001110
+frame_index: 103, frame_base_location: 26368
+content at logical address 47758 is: 46
+address: 0101011001111000, index: 0000000001010110, offset: 0000000001111000
+frame_index: 104, frame_base_location: 26624
+content at logical address 22136 is: 0
+address: 0101011110011011, index: 0000000001010111, offset: 0000000010011011
+content at logical address 22427 is: -26
+address: 0101110100111011, index: 0000000001011101, offset: 0000000000111011
+content at logical address 23867 is: 78
+address: 1110101001000000, index: 0000000011101010, offset: 0000000001000000
+frame_index: 105, frame_base_location: 26880
+content at logical address 59968 is: 0
+address: 1111001011010110, index: 0000000011110010, offset: 0000000011010110
+frame_index: 106, frame_base_location: 27136
+content at logical address 62166 is: 60
+address: 0001101100111100, index: 0000000000011011, offset: 0000000000111100
+frame_index: 107, frame_base_location: 27392
+content at logical address 6972 is: 0
+address: 1111100011000100, index: 0000000011111000, offset: 0000000011000100
+content at logical address 63684 is: 0
+address: 1011010100110100, index: 0000000010110101, offset: 0000000000110100
+content at logical address 46388 is: 0
+address: 1010001111010110, index: 0000000010100011, offset: 0000000011010110
+TLB HIT
+frame_index: 96, frame_base_location: 24576
+content at logical address 41942 is: 40
+address: 1000111010101100, index: 0000000010001110, offset: 0000000010101100
+frame_index: 108, frame_base_location: 27648
+content at logical address 36524 is: 0
+address: 0010010001101011, index: 0000000000100100, offset: 0000000001101011
+content at logical address 9323 is: 26
+address: 0111100110001010, index: 0000000001111001, offset: 0000000010001010
+content at logical address 31114 is: 30
+address: 0101011101001001, index: 0000000001010111, offset: 0000000001001001
+TLB HIT
+frame_index: 44, frame_base_location: 11264
+content at logical address 22345 is: 0
+address: 1011010101111111, index: 0000000010110101, offset: 0000000001111111
+TLB HIT
+frame_index: 127, frame_base_location: 32512
+content at logical address 46463 is: 95
+address: 1101010110001111, index: 0000000011010101, offset: 0000000010001111
+frame_index: 109, frame_base_location: 27904
+content at logical address 54671 is: 99
+address: 0010001111111110, index: 0000000000100011, offset: 0000000011111110
+content at logical address 9214 is: 8
+address: 0001110001011001, index: 0000000000011100, offset: 0000000001011001
+content at logical address 7257 is: 0
+address: 1000000101111110, index: 0000000010000001, offset: 0000000001111110
+frame_index: 110, frame_base_location: 28160
+content at logical address 33150 is: 32
+address: 1010001001011101, index: 0000000010100010, offset: 0000000001011101
+content at logical address 41565 is: 0
+address: 0110011001100110, index: 0000000001100110, offset: 0000000001100110
+frame_index: 111, frame_base_location: 28416
+content at logical address 26214 is: 25
+address: 0000111000001011, index: 0000000000001110, offset: 0000000000001011
+frame_index: 112, frame_base_location: 28672
+content at logical address 3595 is: -126
+address: 0100011000001100, index: 0000000001000110, offset: 0000000000001100
+frame_index: 113, frame_base_location: 28928
+content at logical address 17932 is: 0
+address: 1000011101100100, index: 0000000010000111, offset: 0000000001100100
+frame_index: 114, frame_base_location: 29184
+content at logical address 34660 is: 0
+address: 1100101011111001, index: 0000000011001010, offset: 0000000011111001
+frame_index: 115, frame_base_location: 29440
+content at logical address 51961 is: 0
+address: 1110010100001010, index: 0000000011100101, offset: 0000000000001010
+content at logical address 58634 is: 57
+address: 1110001010000110, index: 0000000011100010, offset: 0000000010000110
+content at logical address 57990 is: 56
+address: 0111000010110000, index: 0000000001110000, offset: 0000000010110000
+content at logical address 28848 is: 0
+address: 1100001100000000, index: 0000000011000011, offset: 0000000000000000
+frame_index: 116, frame_base_location: 29696
+content at logical address 49920 is: 0
+address: 0100011110101111, index: 0000000001000111, offset: 0000000010101111
+frame_index: 117, frame_base_location: 29952
+content at logical address 18351 is: -21
+address: 1101000110100101, index: 0000000011010001, offset: 0000000010100101
+TLB HIT
+frame_index: 126, frame_base_location: 32256
+content at logical address 53669 is: 0
+address: 1000010011001100, index: 0000000010000100, offset: 0000000011001100
+frame_index: 118, frame_base_location: 30208
+content at logical address 33996 is: 0
+address: 0001101001010101, index: 0000000000011010, offset: 0000000001010101
+frame_index: 119, frame_base_location: 30464
+content at logical address 6741 is: 0
+address: 1111101001100010, index: 0000000011111010, offset: 0000000001100010
+frame_index: 120, frame_base_location: 30720
+content at logical address 64098 is: 62
+address: 0000001001011110, index: 0000000000000010, offset: 0000000001011110
+frame_index: 121, frame_base_location: 30976
+content at logical address 606 is: 0
+address: 0110101011110111, index: 0000000001101010, offset: 0000000011110111
+frame_index: 122, frame_base_location: 31232
+content at logical address 27383 is: -67
+address: 1111011010100100, index: 0000000011110110, offset: 0000000010100100
+frame_index: 123, frame_base_location: 31488
+content at logical address 63140 is: 0
+address: 0111110111100100, index: 0000000001111101, offset: 0000000011100100
+frame_index: 124, frame_base_location: 31744
+content at logical address 32228 is: 0
+address: 1111011111001101, index: 0000000011110111, offset: 0000000011001101
+frame_index: 125, frame_base_location: 32000
+content at logical address 63437 is: 0
+address: 0111000110011101, index: 0000000001110001, offset: 0000000010011101
+content at logical address 29085 is: 0
+address: 1111111000111000, index: 0000000011111110, offset: 0000000000111000
+content at logical address 65080 is: 0
+address: 1001011101100001, index: 0000000010010111, offset: 0000000001100001
+frame_index: 126, frame_base_location: 32256
+content at logical address 38753 is: 0
+address: 0011111010101001, index: 0000000000111110, offset: 0000000010101001
+content at logical address 16041 is: 0
+address: 0010001101010001, index: 0000000000100011, offset: 0000000001010001
+TLB HIT
+frame_index: 9, frame_base_location: 2304
+content at logical address 9041 is: 0
+address: 1010010001101010, index: 0000000010100100, offset: 0000000001101010
+content at logical address 42090 is: 41
+address: 1011010100110100, index: 0000000010110101, offset: 0000000000110100
+TLB HIT
+frame_index: 127, frame_base_location: 32512
+content at logical address 46388 is: 0
+address: 1111100010100010, index: 0000000011111000, offset: 0000000010100010
+frame_index: 127, frame_base_location: 32512
+content at logical address 63650 is: 62
+address: 1000111100011100, index: 0000000010001111, offset: 0000000000011100
+frame_index: 0, frame_base_location: 0
+content at logical address 36636 is: 0
+address: 0101010110111011, index: 0000000001010101, offset: 0000000010111011
+frame_index: 1, frame_base_location: 256
+content at logical address 21947 is: 110
+address: 0100110101111001, index: 0000000001001101, offset: 0000000001111001
+frame_index: 2, frame_base_location: 512
+content at logical address 19833 is: 0
+address: 1000111001110000, index: 0000000010001110, offset: 0000000001110000
+content at logical address 36464 is: 0
+address: 0010000101011101, index: 0000000000100001, offset: 0000000001011101
+frame_index: 3, frame_base_location: 768
+content at logical address 8541 is: 0
+address: 0011000110101000, index: 0000000000110001, offset: 0000000010101000
+content at logical address 12712 is: 0
+address: 1011111100111011, index: 0000000010111111, offset: 0000000000111011
+content at logical address 48955 is: -50
+address: 1001100100100110, index: 0000000010011001, offset: 0000000000100110
+content at logical address 39206 is: 38
+address: 0011110011011010, index: 0000000000111100, offset: 0000000011011010
+frame_index: 4, frame_base_location: 1024
+content at logical address 15578 is: 15
+address: 1100000000110101, index: 0000000011000000, offset: 0000000000110101
+frame_index: 5, frame_base_location: 1280
+content at logical address 49205 is: 0
+address: 0001111000110011, index: 0000000000011110, offset: 0000000000110011
+content at logical address 7731 is: -116
+address: 1010100000100110, index: 0000000010101000, offset: 0000000000100110
+content at logical address 43046 is: 42
+address: 1110110001010010, index: 0000000011101100, offset: 0000000001010010
+frame_index: 6, frame_base_location: 1536
+content at logical address 60498 is: 59
+address: 0010010000010101, index: 0000000000100100, offset: 0000000000010101
+content at logical address 9237 is: 0
+address: 1011101001011010, index: 0000000010111010, offset: 0000000001011010
+content at logical address 47706 is: 46
+address: 1010101111000101, index: 0000000010101011, offset: 0000000011000101
+frame_index: 7, frame_base_location: 1792
+content at logical address 43973 is: 0
+address: 1010010000011000, index: 0000000010100100, offset: 0000000000011000
+TLB HIT
+frame_index: 49, frame_base_location: 12544
+content at logical address 42008 is: 0
+address: 0110101101000100, index: 0000000001101011, offset: 0000000001000100
+content at logical address 27460 is: 0
+address: 0110000110100111, index: 0000000001100001, offset: 0000000010100111
+frame_index: 8, frame_base_location: 2048
+content at logical address 24999 is: 105
+address: 1100101011011101, index: 0000000011001010, offset: 0000000011011101
+content at logical address 51933 is: 0
+address: 1000010100010110, index: 0000000010000101, offset: 0000000000010110
+content at logical address 34070 is: 33
+address: 1111111010000011, index: 0000000011111110, offset: 0000000010000011
+TLB HIT
+frame_index: 52, frame_base_location: 13312
+content at logical address 65155 is: -96
+address: 1110101000110011, index: 0000000011101010, offset: 0000000000110011
+content at logical address 59955 is: -116
+address: 0010010000111101, index: 0000000000100100, offset: 0000000000111101
+TLB HIT
+frame_index: 50, frame_base_location: 12800
+content at logical address 9277 is: 0
+address: 0100111111000100, index: 0000000001001111, offset: 0000000011000100
+frame_index: 9, frame_base_location: 2304
+content at logical address 20420 is: 0
+address: 1010111100111100, index: 0000000010101111, offset: 0000000000111100
+content at logical address 44860 is: 0
+address: 1100011100110000, index: 0000000011000111, offset: 0000000000110000
+frame_index: 10, frame_base_location: 2560
+content at logical address 50992 is: 0
+address: 0010100101010111, index: 0000000000101001, offset: 0000000001010111
+frame_index: 11, frame_base_location: 2816
+content at logical address 10583 is: 85
+address: 1110000110010111, index: 0000000011100001, offset: 0000000010010111
+content at logical address 57751 is: 101
+address: 0101101010011011, index: 0000000001011010, offset: 0000000010011011
+content at logical address 23195 is: -90
+address: 0110101001011011, index: 0000000001101010, offset: 0000000001011011
+content at logical address 27227 is: -106
+address: 1010011101000000, index: 0000000010100111, offset: 0000000001000000
+content at logical address 42816 is: 0
+address: 1110001101101011, index: 0000000011100011, offset: 0000000001101011
+frame_index: 12, frame_base_location: 3072
+content at logical address 58219 is: -38
+address: 1001001011100110, index: 0000000010010010, offset: 0000000011100110
+content at logical address 37606 is: 36
+address: 0100011111111010, index: 0000000001000111, offset: 0000000011111010
+content at logical address 18426 is: 17
+address: 0101001011110110, index: 0000000001010010, offset: 0000000011110110
+content at logical address 21238 is: 20
+address: 0010111011001111, index: 0000000000101110, offset: 0000000011001111
+frame_index: 13, frame_base_location: 3328
+content at logical address 11983 is: -77
+address: 1011110100001010, index: 0000000010111101, offset: 0000000000001010
+frame_index: 14, frame_base_location: 3584
+content at logical address 48394 is: 47
+address: 0010101100011100, index: 0000000000101011, offset: 0000000000011100
+frame_index: 15, frame_base_location: 3840
+content at logical address 11036 is: 0
+address: 0111011101011101, index: 0000000001110111, offset: 0000000001011101
+frame_index: 16, frame_base_location: 4096
+content at logical address 30557 is: 0
+address: 0101101110011101, index: 0000000001011011, offset: 0000000010011101
+frame_index: 17, frame_base_location: 4352
+content at logical address 23453 is: 0
+address: 1100001010110111, index: 0000000011000010, offset: 0000000010110111
+frame_index: 18, frame_base_location: 4608
+content at logical address 49847 is: -83
+address: 0111010101010000, index: 0000000001110101, offset: 0000000001010000
+frame_index: 19, frame_base_location: 4864
+content at logical address 30032 is: 0
+address: 1011101111000001, index: 0000000010111011, offset: 0000000011000001
+content at logical address 48065 is: 0
+address: 0001101100101101, index: 0000000000011011, offset: 0000000000101101
+content at logical address 6957 is: 0
+address: 0000100011111101, index: 0000000000001000, offset: 0000000011111101
+content at logical address 2301 is: 0
+address: 0001111000111000, index: 0000000000011110, offset: 0000000000111000
+content at logical address 7736 is: 0
+address: 0111101000011100, index: 0000000001111010, offset: 0000000000011100
+frame_index: 20, frame_base_location: 5120
+content at logical address 31260 is: 0
+address: 0100001010101111, index: 0000000001000010, offset: 0000000010101111
+frame_index: 21, frame_base_location: 5376
+content at logical address 17071 is: -85
+address: 0010001011101100, index: 0000000000100010, offset: 0000000011101100
+frame_index: 22, frame_base_location: 5632
+content at logical address 8940 is: 0
+address: 0010011011001001, index: 0000000000100110, offset: 0000000011001001
+frame_index: 23, frame_base_location: 5888
+content at logical address 9929 is: 0
+address: 1011000111111011, index: 0000000010110001, offset: 0000000011111011
+frame_index: 24, frame_base_location: 6144
+content at logical address 45563 is: 126
+address: 0010111101001011, index: 0000000000101111, offset: 0000000001001011
+frame_index: 25, frame_base_location: 6400
+content at logical address 12107 is: -46
+number of page faults: 538
+number of page hits  : 462
+number of tlb  hits  : 118
+number of tlb  miss  : 882
+INCORRECT! The program output does not match the expected output!
+number of incorrect matches: 1
+
+#./a.out 32768 1
+#./a.out 32768 2
+#./a.out 32768 3
+#./a.out 16384 0
+#./a.out 16384 1
+#./a.out 16384 2
+#./a.out 16384 3

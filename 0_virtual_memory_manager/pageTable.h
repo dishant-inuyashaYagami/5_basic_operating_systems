@@ -1,3 +1,4 @@
+#include "tlb.h"
 
 class pageTable {
 
@@ -47,6 +48,9 @@ class pageTable {
 	int current_pos;
 	int empty_ptr;  				  // ptr pointing to unused frame
 	int callOpt();				      // Optimal page replacement algorithm (Truely Optimal But Hypothetical Algorithm)
+
+	tlb tlb_obj;
+	bool tlbEnabled;
 
 	public:
 		pageTable(int psize, int npages, int rsize, std::vector<int>* ram, std::vector<int>* disk, std::ofstream* outFile, int page_rep_algm = 0);

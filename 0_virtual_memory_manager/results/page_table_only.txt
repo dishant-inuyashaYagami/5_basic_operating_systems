@@ -1,0 +1,252 @@
+./a.out 65536 0
+
+Specified Arguments: 65536 0 
+Virtual Memory Manager Started!
+RAM size: 65536
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: FIFO ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        256
+pageTable constructor completed execution!
+number of page faults: 244
+number of page hits  : 756
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 65536 1
+
+Specified Arguments: 65536 1 
+Virtual Memory Manager Started!
+RAM size: 65536
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: LRU ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        256
+pageTable constructor completed execution!
+number of page faults: 244
+number of page hits  : 756
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 65536 2
+
+Specified Arguments: 65536 2 
+Virtual Memory Manager Started!
+RAM size: 65536
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: Clock ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        256
+pageTable constructor completed execution!
+number of page faults: 244
+number of page hits  : 756
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 65536 3
+
+Specified Arguments: 65536 3 
+Virtual Memory Manager Started!
+RAM size: 65536
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: Optimal ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        256
+pageTable constructor completed execution!
+number of page faults: 244
+number of page hits  : 756
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 32768 0
+
+Specified Arguments: 32768 0 
+Virtual Memory Manager Started!
+RAM size: 32768
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: FIFO ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        128
+pageTable constructor completed execution!
+number of page faults: 538
+number of page hits  : 462
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 32768 1
+
+Specified Arguments: 32768 1 
+Virtual Memory Manager Started!
+RAM size: 32768
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: LRU ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        128
+pageTable constructor completed execution!
+number of page faults: 539
+number of page hits  : 461
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 32768 2
+
+Specified Arguments: 32768 2 
+Virtual Memory Manager Started!
+RAM size: 32768
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: Clock ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        128
+pageTable constructor completed execution!
+number of page faults: 537
+number of page hits  : 463
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 32768 3
+
+Specified Arguments: 32768 3 
+Virtual Memory Manager Started!
+RAM size: 32768
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: Optimal ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        128
+pageTable constructor completed execution!
+number of page faults: 313
+number of page hits  : 687
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 16384 0
+
+Specified Arguments: 16384 0 
+Virtual Memory Manager Started!
+RAM size: 16384
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: FIFO ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        64
+pageTable constructor completed execution!
+number of page faults: 762
+number of page hits  : 238
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 16384 1
+
+Specified Arguments: 16384 1 
+Virtual Memory Manager Started!
+RAM size: 16384
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: LRU ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        64
+pageTable constructor completed execution!
+number of page faults: 754
+number of page hits  : 246
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 16384 2
+
+Specified Arguments: 16384 2 
+Virtual Memory Manager Started!
+RAM size: 16384
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: Clock ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        64
+pageTable constructor completed execution!
+number of page faults: 757
+number of page hits  : 243
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+
+./a.out 16384 3
+
+Specified Arguments: 16384 3 
+Virtual Memory Manager Started!
+RAM size: 16384
+size of the process on the disk: 65536
+tlb constructor called!
+size limit of TLB: 32 pages or frames
+pageTable constructor called!
+=============== Page Replacement Algorithm: Optimal ==============
+page size in int : 256
+page size in bits: 8
+num pages:         256
+num frames:        64
+pageTable constructor completed execution!
+number of page faults: 461
+number of page hits  : 539
+number of tlb  hits  : 0
+number of tlb  miss  : 0
+CORRECT! The program output matches the expected output!
+

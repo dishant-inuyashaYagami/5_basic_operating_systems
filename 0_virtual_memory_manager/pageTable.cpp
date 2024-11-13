@@ -5,7 +5,7 @@
 #include <bitset>
 #include <fstream>
 #include "pageTable.h"
-#include "env.cpp"
+#include "env.h"
 
 using namespace std;
 
@@ -31,7 +31,8 @@ pageTable::pageTable(int psize, int npages, int rsize, std::vector<int>* ram, st
 	assert(page_rep_algm >= 0 && page_rep_algm <=3);
 	initPageRepDataStrct();
 
-	debug = get_bool_env("ENABLE_DEBUG", false);
+	debug      = get_bool_env("ENABLE_DEBUG", false);
+	tlbEnabled = get_bool_env("ENABLE_TLB",   false);
 	num_page_hits      = 0;
 	num_page_faults    = 0;
 	printInitialStats();
@@ -47,16 +48,39 @@ void pageTable::find(int add) {
 	int offset       = get_page_offset (add);
 	printBinFormatAdd(add);
 
-	if (table[page_index][1] == 1) {    // page found (valid bit set)
-		num_page_hits++;
-	} else {
-		num_page_faults++;				// page fault happens
-		int frame_base_location = get_frame_location_tobe_replaced();   // based on some page-replacement technique
-		fetch_data_from_disk(page_index, frame_base_location);
+	int frame_base_location;
+
+	bool skip_page_table = false;		// =============================== TLB SEARCH =============================
+	if (tlbEnabled) {
+		bool present = tlb_obj.find(page_index);
+		if (present) {
+			tlb_obj.incrTlbHit(); 	num_page_hits++; // increment tlb hit
+			skip_page_table = true;
+			frame_base_location = (tlb_obj.getFrame(page_index))*page_size;
+			if (debug) std::cout << "TLB HIT" << std::endl;
+			if (debug) std::cout << "frame_index: " << tlb_obj.getFrame(page_index) << ", frame_base_location: " << frame_base_location << std::endl;
+		} 			
+		else {
+			tlb_obj.incrTlbMiss();						// increment tlb miss
+		}
+	}
+										// ============================== PAGE TABLE SEARCH =======================
+	if (!skip_page_table) {			   
+		if (table[page_index][1] == 1) {    // page found (valid bit set)
+			num_page_hits++;
+		} else {
+			num_page_faults++;				// page fault happens
+			int frame_base_location = get_frame_location_tobe_replaced();   // based on some page-replacement technique
+			fetch_data_from_disk(page_index, frame_base_location);
+		}
+		frame_base_location = table[page_index][0]*page_size;
+		updatePageRepDataStruct(page_index);
+
+		if (tlbEnabled) {										// update TLB if tlb miss happens
+			tlb_obj.upadteTlb(page_index, table[page_index][0]);
+		}
 	}
 
-	int frame_base_location = table[page_index][0]*page_size;
-	updatePageRepDataStruct(page_index);
 	if (debug) std::cout << "content at logical address " << add << " is: " << (*RAM)[frame_base_location + offset] <<std::endl;
 	(*program_outFile) << (*RAM)[frame_base_location + offset] << std::endl; // writing the content to file as well (for verifying later)
 }
@@ -171,8 +195,9 @@ int pageTable::get_frame_location_tobe_replaced () {
 
 	if (debug) std::cout << "frame_index: " << frame_index << ", frame_base_location: " << frame_index*page_size << std::endl;
 
-	int page_index = mapFrameToPage[frame_index]; // update the page table: mark the page bit invalid 
+	int page_index = mapFrameToPage[frame_index]; 			// update the page table: mark the page bit invalid 
 	table[page_index][1] = 0;
+	if (tlbEnabled) tlb_obj.deleteFromTlb(page_index);		// update the TLB if entry exists there
  
 	return frame_index*page_size;
 }
@@ -252,8 +277,10 @@ pageTable::~pageTable() {
 // ------ prints post execution stats
 // ----------------------------------------------------------------------
 void pageTable::printPostStats () {
-	std::cout << "number of page faults: " << num_page_faults << std::endl;
-	std::cout << "number of page hits  : " << num_page_hits << std::endl;
+	std::cout << "number of page faults: " << num_page_faults  << std::endl;
+	std::cout << "number of page hits  : " << num_page_hits    << std::endl;
+	std::cout << "number of tlb  hits  : " << tlb_obj.getTlbHit()  << std::endl;
+	std::cout << "number of tlb  miss  : " << tlb_obj.getTlbMiss() << std::endl;
 }
 
 // ----------------------------------------------------------------------
@@ -264,13 +291,14 @@ void pageTable::verifyCorrectness () {
 	ifstream defAlgm  ("correct_ouput.txt");
 
 	int selfVal, defVal;
-	bool incorrect = 0;
+	int num_incorrect = 0;
 	while (defAlgm >> defVal) {
 		selfAlgm >> selfVal;
-		if (selfVal != defVal) incorrect = true;
+		if (selfVal != defVal) num_incorrect++;
 	}
-	if (incorrect) {
-		std::cout << "INCORRECT! The program output does not match the expected output!\n" << std::endl;
+	if (num_incorrect > 0) {
+		std::cout << "INCORRECT! The program output does not match the expected output!" << std::endl;
+		std::cout << "number of incorrect matches: " << num_incorrect << std::endl << std::endl;
 	} else {
 		std::cout << "CORRECT! The program output matches the expected output!\n" << std::endl;
 	}

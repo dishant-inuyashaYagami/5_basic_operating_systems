@@ -6,7 +6,6 @@
 #include <list>
 #include <iterator>
 
-#include "tlb.h"
 #include "pageTable.h"
 
 using namespace std;
@@ -36,8 +35,7 @@ int main(int argc, char *argv[]) {
     std::cout << "RAM size: " << ram_size << std::endl;
 	
 	readDiskFile();
-	program_outFile = new ofstream("program_output.txt");
-	tlb tlb_obj;	
+	program_outFile = new ofstream("program_output.txt");	
 	int page_rep_algm = atoi(argv[2]);
 	pageTable pt_obj(256, 256, ram_size, RAM, disk_data, program_outFile, page_rep_algm);  // page_size = 256 bytes, num_pages = 256
 	

@@ -12,13 +12,16 @@ all: a.out
 	./a.out 16384 2
 	./a.out 16384 3
 
-a.out: main.cpp tlb.o pageTable.o
-	g++ -std=c++11 main.cpp tlb.o pageTable.o
+a.out: main.cpp pageTable.o
+	g++ -std=c++11 main.cpp tlb.o pageTable.o env.o
 
 
 tlb.o: tlb.h tlb.cpp
 	g++ -c -std=c++11 tlb.cpp
 
 
-pageTable.o: pageTable.h pageTable.cpp
+pageTable.o: pageTable.h pageTable.cpp tlb.o
 	g++ -c -std=c++11 pageTable.cpp
+
+env.o: env.cpp env.h
+	g++ -c env.cpp
